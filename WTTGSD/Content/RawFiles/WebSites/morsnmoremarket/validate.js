@@ -56,11 +56,11 @@ function submitOrder() {
     let errorMsg = "";
 
     if (qtySum == 0) {
-        errorMsg += "Your order is empty, please provide the quantity of items you request.<br>"
+        errorMsg += "Tu pedido está vacío; indica la cantidad de los artículos que solicitas.<br>"
     }
 
     if (!isContactInfoValid(contactInfoInput.value)) {
-        errorMsg += "Please provide your contact information.";
+        errorMsg += "Indica tus datos de contacto.";
     }
 
     if (errorMsg.length > 0) {

@@ -1,0 +1,999 @@
+[ADOS] kernel: microcode: microcode updated early to revision 0xa6, date = 2022-06-28
+[ADOS] kernel: Linux version 6.2.12-1-MANJARO (builduser@fv-az302-253) (gcc (GCC) 12.2.1 20230201, GNU ld (GNU Binutils) 2.40) #1 SMP PREEMPT_DYNAMIC Thu Apr 20 14:17:37 UTC 2023
+[ADOS] kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-6.2-x86_64 root=UUID=242c1cbb-bfc9-4dd1-9adb-29d82d6ea249 rw ibt=off
+[ADOS] kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[ADOS] kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[ADOS] kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[ADOS] kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[ADOS] kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[ADOS] kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[ADOS] kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+[ADOS] kernel: x86/fpu: Enabled xstate features 0x2e7, context size is 2440 bytes, using 'compacted' format.
+[ADOS] kernel: signal: max sigframe size: 3632
+[ADOS] kernel: BIOS-provided physical RAM map:
+[ADOS] kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[ADOS] kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x0000000000100000-0x0000000039f98fff] usable
+[ADOS] kernel: BIOS-e820: [mem 0x0000000039f99000-0x000000003a898fff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x000000003a899000-0x00000000434aefff] usable
+[ADOS] kernel: BIOS-e820: [mem 0x00000000434af000-0x000000004387efff] type 20
+[ADOS] kernel: BIOS-e820: [mem 0x000000004387f000-0x00000000452fefff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x00000000452ff000-0x0000000045b2efff] ACPI NVS
+[ADOS] kernel: BIOS-e820: [mem 0x0000000045b2f000-0x0000000045bfefff] ACPI data
+[ADOS] kernel: BIOS-e820: [mem 0x0000000045bff000-0x0000000045bfffff] usable
+[ADOS] kernel: BIOS-e820: [mem 0x0000000045c00000-0x000000004f7fffff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x00000000ff500000-0x00000000ffffffff] reserved
+[ADOS] kernel: BIOS-e820: [mem 0x0000000100000000-0x00000004b07fffff] usable
+[ADOS] kernel: NX (Execute Disable) protection: active
+[ADOS] kernel: efi: EFI v2.70 by INSYDE Corp.
+[ADOS] kernel: efi: ACPI=0x45bfe000 ACPI 2.0=0x45bfe014 TPMFinalLog=0x45ac5000 SMBIOS=0x4395f000 SMBIOS 3.0=0x4395d000 ESRT=0x3f5ab198 
+[ADOS] kernel: efi: Not removing mem76: MMIO range=[0xfe010000-0xfe010fff] (4KB) from e820 map
+[ADOS] kernel: efi: Remove mem78: MMIO range=[0xff500000-0xffffffff] (11MB) from e820 map
+[ADOS] kernel: e820: remove [mem 0xff500000-0xffffffff] reserved
+[ADOS] kernel: SMBIOS 3.3.0 present.
+[ADOS] kernel: DMI: Acer Nitro AN515-56/Scala_TLM, BIOS V1.06 08/16/2021
+[ADOS] kernel: tsc: Detected 3100.000 MHz processor
+[ADOS] kernel: tsc: Detected 3110.400 MHz TSC
+[ADOS] kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[ADOS] kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+[ADOS] kernel: last_pfn = 0x4b0800 max_arch_pfn = 0x400000000
+[ADOS] kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[ADOS] kernel: last_pfn = 0x45c00 max_arch_pfn = 0x400000000
+[ADOS] kernel: esrt: Reserving ESRT space from 0x000000003f5ab198 to 0x000000003f5ab220.
+[ADOS] kernel: e820: update [mem 0x3f5ab000-0x3f5abfff] usable ==> reserved
+[ADOS] kernel: Using GB pages for direct mapping
+[ADOS] kernel: Secure boot disabled
+[ADOS] kernel: RAMDISK: [mem 0x3600d000-0x36ffdfff]
+[ADOS] kernel: ACPI: Early table checksum verification disabled
+[ADOS] kernel: ACPI: RSDP 0x0000000045BFE014 000024 (v02 ACRSYS)
+[ADOS] kernel: ACPI: XSDT 0x0000000045BD3188 000144 (v01 ACRSYS ACRPRDCT 00000002      01000013)
+[ADOS] kernel: ACPI: FACP 0x0000000045BFD000 00010C (v06 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: DSDT 0x0000000045B72000 0557DE (v02 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: FACS 0x0000000045AA0000 000040
+[ADOS] kernel: ACPI: UEFI 0x0000000045B2E000 000236 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BFA000 00255C (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BF7000 002F74 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BF6000 000100 (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BF2000 0039F6 (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BEE000 0033BD (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BE2000 00B254 (v02 INTEL  TcssSsdt 00001000 INTL 20160422)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BE0000 001055 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BDF000 00077B (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: TPM2 0x0000000045BDE000 00004C (v04 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: MSDM 0x0000000045BDD000 000055 (v03 ACRSYS ACRPRDCT 00000001 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BDC000 00048A (v02 ACRSYS ACRPRDCT 00000000 1025 00040000)
+[ADOS] kernel: ACPI: NHLT 0x0000000045BDA000 001B54 (v00 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: LPIT 0x0000000045BD9000 0000CC (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: WSMT 0x0000000045BD8000 000028 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BD7000 000B70 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BD6000 00012A (v02 ACRSYS ACRPRDCT 00000000 1025 00040000)
+[ADOS] kernel: ACPI: DBGP 0x0000000045BD5000 000034 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: DBG2 0x0000000045BD4000 000054 (v00 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045BCB000 0076B9 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: HPET 0x0000000045BCA000 000038 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: APIC 0x0000000045BC9000 00012C (v03 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: MCFG 0x0000000045BC8000 00003C (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B70000 00129C (v02 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B6F000 000C78 (v02 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: DMAR 0x0000000045B6E000 0000A0 (v02 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B6C000 001D87 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: UEFI 0x0000000045A59000 00063A (v01 ACRSYS ACRPRDCT 00000000 1025 00040000)
+[ADOS] kernel: ACPI: UEFI 0x0000000045A58000 00005C (v01 ACRSYS ACRPRDCT 00000000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B6B000 0000E0 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B6A000 0000F8 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+[ADOS] kernel: ACPI: SSDT 0x0000000045B69000 000835 (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+[ADOS] kernel: ACPI: FPDT 0x0000000045B68000 000044 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+[ADOS] kernel: ACPI: PTDT 0x0000000045B66000 000CFE (v00 ACRSYS ACRPRDCT 00000005 1025 00040000)
+[ADOS] kernel: ACPI: BGRT 0x0000000045B67000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+[ADOS] kernel: ACPI: Reserving FACP table memory at [mem 0x45bfd000-0x45bfd10b]
+[ADOS] kernel: ACPI: Reserving DSDT table memory at [mem 0x45b72000-0x45bc77dd]
+[ADOS] kernel: ACPI: Reserving FACS table memory at [mem 0x45aa0000-0x45aa003f]
+[ADOS] kernel: ACPI: Reserving UEFI table memory at [mem 0x45b2e000-0x45b2e235]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bfa000-0x45bfc55b]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bf7000-0x45bf9f73]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bf6000-0x45bf60ff]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bf2000-0x45bf59f5]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bee000-0x45bf13bc]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45be2000-0x45bed253]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45be0000-0x45be1054]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bdf000-0x45bdf77a]
+[ADOS] kernel: ACPI: Reserving TPM2 table memory at [mem 0x45bde000-0x45bde04b]
+[ADOS] kernel: ACPI: Reserving MSDM table memory at [mem 0x45bdd000-0x45bdd054]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bdc000-0x45bdc489]
+[ADOS] kernel: ACPI: Reserving NHLT table memory at [mem 0x45bda000-0x45bdbb53]
+[ADOS] kernel: ACPI: Reserving LPIT table memory at [mem 0x45bd9000-0x45bd90cb]
+[ADOS] kernel: ACPI: Reserving WSMT table memory at [mem 0x45bd8000-0x45bd8027]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bd7000-0x45bd7b6f]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bd6000-0x45bd6129]
+[ADOS] kernel: ACPI: Reserving DBGP table memory at [mem 0x45bd5000-0x45bd5033]
+[ADOS] kernel: ACPI: Reserving DBG2 table memory at [mem 0x45bd4000-0x45bd4053]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45bcb000-0x45bd26b8]
+[ADOS] kernel: ACPI: Reserving HPET table memory at [mem 0x45bca000-0x45bca037]
+[ADOS] kernel: ACPI: Reserving APIC table memory at [mem 0x45bc9000-0x45bc912b]
+[ADOS] kernel: ACPI: Reserving MCFG table memory at [mem 0x45bc8000-0x45bc803b]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b70000-0x45b7129b]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b6f000-0x45b6fc77]
+[ADOS] kernel: ACPI: Reserving DMAR table memory at [mem 0x45b6e000-0x45b6e09f]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b6c000-0x45b6dd86]
+[ADOS] kernel: ACPI: Reserving UEFI table memory at [mem 0x45a59000-0x45a59639]
+[ADOS] kernel: ACPI: Reserving UEFI table memory at [mem 0x45a58000-0x45a5805b]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b6b000-0x45b6b0df]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b6a000-0x45b6a0f7]
+[ADOS] kernel: ACPI: Reserving SSDT table memory at [mem 0x45b69000-0x45b69834]
+[ADOS] kernel: ACPI: Reserving FPDT table memory at [mem 0x45b68000-0x45b68043]
+[ADOS] kernel: ACPI: Reserving PTDT table memory at [mem 0x45b66000-0x45b66cfd]
+[ADOS] kernel: ACPI: Reserving BGRT table memory at [mem 0x45b67000-0x45b67037]
+[ADOS] kernel: No NUMA configuration found
+[ADOS] kernel: Faking a node at [mem 0x0000000000000000-0x00000004b07fffff]
+[ADOS] kernel: NODE_DATA(0) allocated [mem 0x4b07fb000-0x4b07fffff]
+[ADOS] kernel: Zone ranges:
+[ADOS] kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[ADOS] kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[ADOS] kernel:   Normal   [mem 0x0000000100000000-0x00000004b07fffff]
+[ADOS] kernel:   Device   empty
+[ADOS] kernel: Movable zone start for each node
+[ADOS] kernel: Early memory node ranges
+[ADOS] kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[ADOS] kernel:   node   0: [mem 0x0000000000100000-0x0000000039f98fff]
+[ADOS] kernel:   node   0: [mem 0x000000003a899000-0x00000000434aefff]
+[ADOS] kernel:   node   0: [mem 0x0000000045bff000-0x0000000045bfffff]
+[ADOS] kernel:   node   0: [mem 0x0000000100000000-0x00000004b07fffff]
+[ADOS] kernel: Initmem setup node 0 [mem 0x0000000000001000-0x00000004b07fffff]
+[ADOS] kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+[ADOS] kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+[ADOS] kernel: On node 0, zone DMA32: 2304 pages in unavailable ranges
+[ADOS] kernel: On node 0, zone DMA32: 10064 pages in unavailable ranges
+[ADOS] kernel: On node 0, zone Normal: 9216 pages in unavailable ranges
+[ADOS] kernel: On node 0, zone Normal: 30720 pages in unavailable ranges
+[ADOS] kernel: Reserving Intel graphics memory at [mem 0x4b800000-0x4f7fffff]
+[ADOS] kernel: ACPI: PM-Timer IO Port: 0x1808
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[ADOS] kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[ADOS] kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[ADOS] kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[ADOS] kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[ADOS] kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+[ADOS] kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[ADOS] kernel: e820: update [mem 0x3f198000-0x3f28bfff] usable ==> reserved
+[ADOS] kernel: TSC deadline timer available
+[ADOS] kernel: smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x39f99000-0x3a898fff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x3f198000-0x3f28bfff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x3f5ab000-0x3f5abfff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x434af000-0x4387efff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x4387f000-0x452fefff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x452ff000-0x45b2efff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x45b2f000-0x45bfefff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x45c00000-0x4f7fffff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0x4f800000-0xfe00ffff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0xfe011000-0xfed1ffff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xfed7ffff]
+[ADOS] kernel: PM: hibernation: Registered nosave memory: [mem 0xfed80000-0xffffffff]
+[ADOS] kernel: [mem 0x4f800000-0xfe00ffff] available for PCI devices
+[ADOS] kernel: Booting paravirtualized kernel on bare hardware
+[ADOS] kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+[ADOS] kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[ADOS] kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+[ADOS] kernel: pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+[ADOS] kernel: pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[ADOS] kernel: Fallback order for Node 0: 0 
+[ADOS] kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4077025
+[ADOS] kernel: Policy zone: Normal
+[ADOS] kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.2-x86_64 root=UUID=242c1cbb-bfc9-4dd1-9adb-29d82d6ea249 rw ibt=off
+[ADOS] kernel: Unknown kernel command line parameters "BOOT_IMAGE=/boot/vmlinuz-6.2-x86_64", will be passed to user space.
+[ADOS] kernel: random: crng init done
+[ADOS] kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[ADOS] kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[ADOS] kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[ADOS] kernel: software IO TLB: area num 8.
+[ADOS] kernel: Memory: 16061144K/16567608K available (16384K kernel code, 2115K rwdata, 12616K rodata, 3288K init, 4052K bss, 506204K reserved, 0K cma-reserved)
+[ADOS] kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[ADOS] kernel: ftrace: allocating 46954 entries in 184 pages
+[ADOS] kernel: ftrace: allocated 184 pages with 4 groups
+[ADOS] kernel: Dynamic Preempt: full
+[ADOS] kernel: rcu: Preemptible hierarchical RCU implementation.
+[ADOS] kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=8.
+[ADOS] kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+[ADOS] kernel:         Trampoline variant of Tasks RCU enabled.
+[ADOS] kernel:         Rude variant of Tasks RCU enabled.
+[ADOS] kernel:         Tracing variant of Tasks RCU enabled.
+[ADOS] kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[ADOS] kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[ADOS] kernel: NR_IRQS: 20736, nr_irqs: 2048, preallocated irqs: 16
+[ADOS] kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[ADOS] kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[ADOS] kernel: Console: colour dummy device 80x25
+[ADOS] kernel: printk: console [tty0] enabled
+[ADOS] kernel: ACPI: Core revision 20221020
+[ADOS] kernel: hpet: HPET dysfunctional in PC10. Force disabled.
+[ADOS] kernel: APIC: Switch to symmetric I/O mode setup
+[ADOS] kernel: DMAR: Host address width 39
+[ADOS] kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[ADOS] kernel: DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c40660462 ecap 69e2ff0505e
+[ADOS] kernel: DMAR: DRHD base: 0x000000fed84000 flags: 0x0
+[ADOS] kernel: DMAR: dmar1: reg_base_addr fed84000 ver 1:0 cap d2008c40660462 ecap f050da
+[ADOS] kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[ADOS] kernel: DMAR: dmar2: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[ADOS] kernel: DMAR: RMRR base: 0x0000004b000000 end: 0x0000004f7fffff
+[ADOS] kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 2
+[ADOS] kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[ADOS] kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[ADOS] kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+[ADOS] kernel: x2apic enabled
+[ADOS] kernel: Switched APIC routing to cluster x2apic.
+[ADOS] kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2cd5a8bb032, max_idle_ns: 440795365915 ns
+[ADOS] kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6223.00 BogoMIPS (lpj=10368000)
+[ADOS] kernel: pid_max: default: 32768 minimum: 301
+[ADOS] kernel: LSM: initializing lsm=capability,landlock,lockdown,yama,integrity,bpf
+[ADOS] kernel: landlock: Up and running.
+[ADOS] kernel: Yama: becoming mindful.
+[ADOS] kernel: LSM support for eBPF active
+[ADOS] kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[ADOS] kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[ADOS] kernel: CPU0: Thermal monitoring enabled (TM1)
+[ADOS] kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[ADOS] kernel: process: using mwait in idle threads
+[ADOS] kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[ADOS] kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[ADOS] kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[ADOS] kernel: Spectre V2 : Mitigation: Enhanced IBRS
+[ADOS] kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[ADOS] kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+[ADOS] kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[ADOS] kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[ADOS] kernel: Freeing SMP alternatives memory: 40K
+[ADOS] kernel: smpboot: CPU0: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz (family: 0x6, model: 0x8c, stepping: 0x1)
+[ADOS] kernel: cblist_init_generic: Setting adjustable number of callback queues.
+[ADOS] kernel: cblist_init_generic: Setting shift to 3 and lim to 1.
+[ADOS] kernel: cblist_init_generic: Setting shift to 3 and lim to 1.
+[ADOS] kernel: cblist_init_generic: Setting shift to 3 and lim to 1.
+[ADOS] kernel: Performance Events: PEBS fmt4+-baseline,  AnyThread deprecated, Icelake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[ADOS] kernel: ... version:                5
+[ADOS] kernel: ... bit width:              48
+[ADOS] kernel: ... generic registers:      8
+[ADOS] kernel: ... value mask:             0000ffffffffffff
+[ADOS] kernel: ... max period:             00007fffffffffff
+[ADOS] kernel: ... fixed-purpose events:   4
+[ADOS] kernel: ... event mask:             0001000f000000ff
+[ADOS] kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1321
+[ADOS] kernel: rcu: Hierarchical SRCU implementation.
+[ADOS] kernel: rcu:         Max phase no-delay instances is 1000.
+[ADOS] kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[ADOS] kernel: smp: Bringing up secondary CPUs ...
+[ADOS] kernel: x86: Booting SMP configuration:
+[ADOS] kernel: .... node  #0, CPUs:      #1 #2 #3 #4 #5 #6 #7
+[ADOS] kernel: smp: Brought up 1 node, 8 CPUs
+[ADOS] kernel: smpboot: Max logical packages: 1
+[ADOS] kernel: smpboot: Total of 8 processors activated (49786.00 BogoMIPS)
+[ADOS] kernel: devtmpfs: initialized
+[ADOS] kernel: x86/mm: Memory block size: 128MB
+[ADOS] kernel: ACPI: PM: Registering ACPI NVS region [mem 0x452ff000-0x45b2efff] (8585216 bytes)
+[ADOS] kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[ADOS] kernel: futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[ADOS] kernel: pinctrl core: initialized pinctrl subsystem
+[ADOS] kernel: PM: RTC time: 09:10:35, date: 2023-05-05
+[ADOS] kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[ADOS] kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+[ADOS] kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[ADOS] kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[ADOS] kernel: audit: initializing netlink subsys (disabled)
+[ADOS] kernel: audit: type=2000 audit(1683277835.013:1): state=initialized audit_enabled=0 res=1
+[ADOS] kernel: thermal_sys: Registered thermal governor 'fair_share'
+[ADOS] kernel: thermal_sys: Registered thermal governor 'bang_bang'
+[ADOS] kernel: thermal_sys: Registered thermal governor 'step_wise'
+[ADOS] kernel: thermal_sys: Registered thermal governor 'user_space'
+[ADOS] kernel: thermal_sys: Registered thermal governor 'power_allocator'
+[ADOS] kernel: cpuidle: using governor ladder
+[ADOS] kernel: cpuidle: using governor menu
+[ADOS] kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[ADOS] kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff] (base 0xc0000000)
+[ADOS] kernel: PCI: not using MMCONFIG
+[ADOS] kernel: PCI: Using configuration type 1 for base access
+[ADOS] kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[ADOS] kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[ADOS] kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[ADOS] kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[ADOS] kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[ADOS] kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[ADOS] kernel: ACPI: Added _OSI(Module Device)
+[ADOS] kernel: ACPI: Added _OSI(Processor Device)
+[ADOS] kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+[ADOS] kernel: ACPI: Added _OSI(Processor Aggregator Device)
+[ADOS] kernel: ACPI: 19 ACPI AML tables successfully acquired and loaded
+[ADOS] kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^SPI1.SPFD.CVFD (20221020/dspkginit-438)
+[ADOS] kernel: fbcon: Taking over console
+[ADOS] kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^SPI1.SPFD.CVFD (20221020/dspkginit-438)
+[ADOS] kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^XHCI.RHUB.HS04.VI2C (20221020/dspkginit-438)
+[ADOS] kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^XHCI.RHUB.HS04.VI2C (20221020/dspkginit-438)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241746400 0001C6 (v02 PmRef  Cpu0Psd  00003000 INTL 20160422)
+[ADOS] kernel: ACPI: \_SB_.PR00: _OSC native thermal LVT Acked
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B62417FC400 000386 (v02 PmRef  Cpu0Cst  00003001 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241C0B800 0006AA (v02 PmRef  Cpu0Ist  00003000 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B62417FFC00 000266 (v02 PmRef  Cpu0Hwp  00003000 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241C01000 0008E7 (v02 PmRef  ApIst    00003000 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241C0D800 00048A (v02 PmRef  ApHwp    00003000 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241C0E800 0004D4 (v02 PmRef  ApPsd    00003000 INTL 20160422)
+[ADOS] kernel: ACPI: Dynamic OEM Table Load:
+[ADOS] kernel: ACPI: SSDT 0xFFFF8B6241C09000 00048A (v02 PmRef  ApCst    00003000 INTL 20160422)
+[ADOS] kernel: ACPI: EC: EC started
+[ADOS] kernel: ACPI: EC: interrupt blocked
+[ADOS] kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[ADOS] kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC used to handle transactions
+[ADOS] kernel: ACPI: Interpreter enabled
+[ADOS] kernel: ACPI: PM: (supports S0 S3 S4 S5)
+[ADOS] kernel: ACPI: Using IOAPIC for interrupt routing
+[ADOS] kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff] (base 0xc0000000)
+[ADOS] kernel: PCI: MMCONFIG at [mem 0xc0000000-0xcfffffff] reserved as ACPI motherboard resource
+[ADOS] kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[ADOS] kernel: PCI: Using E820 reservations for host bridge windows
+[ADOS] kernel: ACPI: Enabled 9 GPEs in block 00 to 7F
+[ADOS] kernel: ACPI: \_SB_.PC00.PEG0.PG00: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.PEG1.PG01: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.PEG2.PG02: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.XHCI.RHUB.HS10.BTPR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.PAUD: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.SAT0.VOL0.V0PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.SAT0.VOL1.V1PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.SAT0.VOL2.V2PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.VMD0.VOL0.V0PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.VMD0.VOL1.V1PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.VMD0.VOL2.V2PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.VMD0.VOL3.V3PR: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.TBT0: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.TBT1: New power resource
+[ADOS] kernel: ACPI: \_SB_.PC00.D3C_: New power resource
+[ADOS] kernel: ACPI: \_TZ_.FN00: New power resource
+[ADOS] kernel: ACPI: \_TZ_.FN01: New power resource
+[ADOS] kernel: ACPI: \_TZ_.FN02: New power resource
+[ADOS] kernel: ACPI: \_TZ_.FN03: New power resource
+[ADOS] kernel: ACPI: \_TZ_.FN04: New power resource
+[ADOS] kernel: ACPI: \PIN_: New power resource
+[ADOS] kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-e0])
+[ADOS] kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[ADOS] kernel: acpi PNP0A08:00: _OSC: platform does not support [AER]
+[ADOS] kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME PCIeCapability LTR DPC]
+[ADOS] kernel: PCI host bridge to bus 0000:00
+[ADOS] kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[ADOS] kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[ADOS] kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[ADOS] kernel: pci_bus 0000:00: root bus resource [mem 0x4f800000-0xbfffffff window]
+[ADOS] kernel: pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[ADOS] kernel: pci_bus 0000:00: root bus resource [bus 00-e0]
+[ADOS] kernel: pci 0000:00:00.0: [8086:9a14] type 00 class 0x060000
+[ADOS] kernel: pci 0000:00:02.0: [8086:9a49] type 00 class 0x030000
+[ADOS] kernel: pci 0000:00:02.0: reg 0x10: [mem 0x6104000000-0x6104ffffff 64bit]
+[ADOS] kernel: pci 0000:00:02.0: reg 0x18: [mem 0x4000000000-0x400fffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:02.0: reg 0x20: [io  0x5000-0x503f]
+[ADOS] kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+[ADOS] kernel: pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics
+[ADOS] kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[ADOS] kernel: pci 0000:00:02.0: reg 0x344: [mem 0x00000000-0x00ffffff 64bit]
+[ADOS] kernel: pci 0000:00:02.0: VF(n) BAR0 space: [mem 0x00000000-0x06ffffff 64bit] (contains BAR0 for 7 VFs)
+[ADOS] kernel: pci 0000:00:02.0: reg 0x34c: [mem 0x00000000-0x1fffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:02.0: VF(n) BAR2 space: [mem 0x00000000-0xdfffffff 64bit pref] (contains BAR2 for 7 VFs)
+[ADOS] kernel: pci 0000:00:04.0: [8086:9a03] type 00 class 0x118000
+[ADOS] kernel: pci 0000:00:04.0: reg 0x10: [mem 0x6105240000-0x610525ffff 64bit]
+[ADOS] kernel: pci 0000:00:06.0: [8086:9a09] type 01 class 0x060400
+[ADOS] kernel: pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+[ADOS] kernel: pci 0000:00:06.0: PTM enabled (root), 4ns granularity
+[ADOS] kernel: pci 0000:00:07.0: [8086:9a23] type 01 class 0x060400
+[ADOS] kernel: pci 0000:00:07.0: Overriding RP PIO Log Size to 4
+[ADOS] kernel: pci 0000:00:07.0: PME# supported from D0 D3hot D3cold
+[ADOS] kernel: pci 0000:00:08.0: [8086:9a11] type 00 class 0x088000
+[ADOS] kernel: pci 0000:00:08.0: reg 0x10: [mem 0x6105282000-0x6105282fff 64bit]
+[ADOS] kernel: pci 0000:00:0d.0: [8086:9a13] type 00 class 0x0c0330
+[ADOS] kernel: pci 0000:00:0d.0: reg 0x10: [mem 0x6105260000-0x610526ffff 64bit]
+[ADOS] kernel: pci 0000:00:0d.0: PME# supported from D3hot D3cold
+[ADOS] kernel: pci 0000:00:0d.2: [8086:9a1b] type 00 class 0x0c0340
+[ADOS] kernel: pci 0000:00:0d.2: reg 0x10: [mem 0x6105200000-0x610523ffff 64bit]
+[ADOS] kernel: pci 0000:00:0d.2: reg 0x18: [mem 0x6105281000-0x6105281fff 64bit]
+[ADOS] kernel: pci 0000:00:0d.2: supports D1 D2
+[ADOS] kernel: pci 0000:00:0d.2: PME# supported from D0 D1 D2 D3hot D3cold
+[ADOS] kernel: pci 0000:00:0e.0: [8086:9a0b] type 00 class 0x010400
+[ADOS] kernel: pci 0000:00:0e.0: reg 0x10: [mem 0x6102000000-0x6103ffffff 64bit]
+[ADOS] kernel: pci 0000:00:0e.0: reg 0x18: [mem 0x50000000-0x51ffffff]
+[ADOS] kernel: pci 0000:00:0e.0: reg 0x20: [mem 0x6105100000-0x61051fffff 64bit]
+[ADOS] kernel: pci 0000:00:14.0: [8086:a0ed] type 00 class 0x0c0330
+[ADOS] kernel: pci 0000:00:14.0: reg 0x10: [mem 0x5e380000-0x5e38ffff 64bit]
+[ADOS] kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+[ADOS] kernel: pci 0000:00:14.2: [8086:a0ef] type 00 class 0x050000
+[ADOS] kernel: pci 0000:00:14.2: reg 0x10: [mem 0x6105278000-0x610527bfff 64bit]
+[ADOS] kernel: pci 0000:00:14.2: reg 0x18: [mem 0x6105280000-0x6105280fff 64bit]
+[ADOS] kernel: pci 0000:00:14.3: [8086:a0f0] type 00 class 0x028000
+[ADOS] kernel: pci 0000:00:14.3: reg 0x10: [mem 0x6105274000-0x6105277fff 64bit]
+[ADOS] kernel: pci 0000:00:14.3: PME# supported from D0 D3hot D3cold
+[ADOS] kernel: pci 0000:00:15.0: [8086:a0e8] type 00 class 0x0c8000
+[ADOS] kernel: pci 0000:00:15.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[ADOS] kernel: pci 0000:00:15.3: [8086:a0eb] type 00 class 0x0c8000
+[ADOS] kernel: pci 0000:00:15.3: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[ADOS] kernel: pci 0000:00:16.0: [8086:a0e0] type 00 class 0x078000
+[ADOS] kernel: pci 0000:00:16.0: reg 0x10: [mem 0x610527d000-0x610527dfff 64bit]
+[ADOS] kernel: pci 0000:00:16.0: PME# supported from D3hot
+[ADOS] kernel: pci 0000:00:17.0: [8086:09ab] type 00 class 0x088000
+[ADOS] kernel: pci 0000:00:1d.0: [8086:a0b3] type 01 class 0x060400
+[ADOS] kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[ADOS] kernel: pci 0000:00:1d.0: PTM enabled (root), 4ns granularity
+[ADOS] kernel: pci 0000:00:1f.0: [8086:a082] type 00 class 0x060100
+[ADOS] kernel: pci 0000:00:1f.3: [8086:a0c8] type 00 class 0x040100
+[ADOS] kernel: pci 0000:00:1f.3: reg 0x10: [mem 0x6105270000-0x6105273fff 64bit]
+[ADOS] kernel: pci 0000:00:1f.3: reg 0x20: [mem 0x6105000000-0x61050fffff 64bit]
+[ADOS] kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[ADOS] kernel: pci 0000:00:1f.4: [8086:a0a3] type 00 class 0x0c0500
+[ADOS] kernel: pci 0000:00:1f.4: reg 0x10: [mem 0x610527c000-0x610527c0ff 64bit]
+[ADOS] kernel: pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf]
+[ADOS] kernel: pci 0000:00:1f.5: [8086:a0a4] type 00 class 0x0c8000
+[ADOS] kernel: pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+[ADOS] kernel: pci 0000:01:00.0: [10de:25a5] type 00 class 0x030000
+[ADOS] kernel: pci 0000:01:00.0: reg 0x10: [mem 0x5f000000-0x5fffffff]
+[ADOS] kernel: pci 0000:01:00.0: reg 0x14: [mem 0x6000000000-0x60ffffffff 64bit pref]
+[ADOS] kernel: pci 0000:01:00.0: reg 0x1c: [mem 0x6100000000-0x6101ffffff 64bit pref]
+[ADOS] kernel: pci 0000:01:00.0: reg 0x24: [io  0x4000-0x407f]
+[ADOS] kernel: pci 0000:01:00.0: reg 0x30: [mem 0xfff80000-0xffffffff pref]
+[ADOS] kernel: pci 0000:01:00.0: PME# supported from D0 D3hot
+[ADOS] kernel: pci 0000:01:00.0: 63.012 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x4 link at 0000:00:06.0 (capable of 252.048 Gb/s with 16.0 GT/s PCIe x16 link)
+[ADOS] kernel: pci 0000:01:00.1: [10de:2291] type 00 class 0x040300
+[ADOS] kernel: pci 0000:01:00.1: reg 0x10: [mem 0x60000000-0x60003fff]
+[ADOS] kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [io  0x4000-0x4fff]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [mem 0x5f000000-0x600fffff]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [mem 0x6000000000-0x6101ffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+[ADOS] kernel: pci 0000:00:07.0:   bridge window [mem 0x52000000-0x5e1fffff]
+[ADOS] kernel: pci 0000:00:07.0:   bridge window [mem 0x6110000000-0x612bffffff 64bit pref]
+[ADOS] kernel: pci 0000:2c:00.0: [10ec:2600] type 00 class 0x020000
+[ADOS] kernel: pci 0000:2c:00.0: reg 0x10: [io  0x3000-0x30ff]
+[ADOS] kernel: pci 0000:2c:00.0: reg 0x18: [mem 0x5e204000-0x5e204fff 64bit]
+[ADOS] kernel: pci 0000:2c:00.0: reg 0x20: [mem 0x5e200000-0x5e203fff 64bit]
+[ADOS] kernel: pci 0000:2c:00.0: supports D1 D2
+[ADOS] kernel: pci 0000:2c:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[ADOS] kernel: pci 0000:00:1d.0: PCI bridge to [bus 2c]
+[ADOS] kernel: pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[ADOS] kernel: pci 0000:00:1d.0:   bridge window [mem 0x5e200000-0x5e2fffff]
+[ADOS] kernel: Low-power S0 idle used by default for system suspend
+[ADOS] kernel: ACPI: EC: interrupt unblocked
+[ADOS] kernel: ACPI: EC: event unblocked
+[ADOS] kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[ADOS] kernel: ACPI: EC: GPE=0x6e
+[ADOS] kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC initialization complete
+[ADOS] kernel: ACPI: \_SB_.PC00.LPCB.EC0_: EC: Used to handle transactions and events
+[ADOS] kernel: iommu: Default domain type: Translated 
+[ADOS] kernel: iommu: DMA domain TLB invalidation policy: lazy mode 
+[ADOS] kernel: SCSI subsystem initialized
+[ADOS] kernel: libata version 3.00 loaded.
+[ADOS] kernel: ACPI: bus type USB registered
+[ADOS] kernel: usbcore: registered new interface driver usbfs
+[ADOS] kernel: usbcore: registered new interface driver hub
+[ADOS] kernel: usbcore: registered new device driver usb
+[ADOS] kernel: pps_core: LinuxPPS API ver. 1 registered
+[ADOS] kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[ADOS] kernel: PTP clock support registered
+[ADOS] kernel: EDAC MC: Ver: 3.0.0
+[ADOS] kernel: Registered efivars operations
+[ADOS] kernel: NetLabel: Initializing
+[ADOS] kernel: NetLabel:  domain hash size = 128
+[ADOS] kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[ADOS] kernel: NetLabel:  unlabeled traffic allowed by default
+[ADOS] kernel: mctp: management component transport protocol core
+[ADOS] kernel: NET: Registered PF_MCTP protocol family
+[ADOS] kernel: PCI: Using ACPI for IRQ routing
+[ADOS] kernel: PCI: pci_cache_line_size set to 64 bytes
+[ADOS] kernel: pci 0000:00:1f.5: can't claim BAR 0 [mem 0xfe010000-0xfe010fff]: no compatible bridge window
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x39f99000-0x3bffffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x3f198000-0x3fffffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x3f5ab000-0x3fffffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x434af000-0x43ffffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x45c00000-0x47ffffff]
+[ADOS] kernel: e820: reserve RAM buffer [mem 0x4b0800000-0x4b3ffffff]
+[ADOS] kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[ADOS] kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+[ADOS] kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[ADOS] kernel: pci 0000:01:00.0: vgaarb: bridge control possible
+[ADOS] kernel: pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[ADOS] kernel: vgaarb: loaded
+[ADOS] kernel: clocksource: Switched to clocksource tsc-early
+[ADOS] kernel: VFS: Disk quotas dquot_6.6.0
+[ADOS] kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[ADOS] kernel: pnp: PnP ACPI init
+[ADOS] kernel: system 00:00: [io  0x0680-0x069f] has been reserved
+[ADOS] kernel: system 00:00: [io  0x164e-0x164f] has been reserved
+[ADOS] kernel: system 00:00: [io  0xfd60-0xfd63] has been reserved
+[ADOS] kernel: system 00:02: [io  0x1854-0x1857] has been reserved
+[ADOS] kernel: pnp 00:04: disabling [mem 0xc0000000-0xcfffffff] because it overlaps 0000:00:02.0 BAR 9 [mem 0x00000000-0xdfffffff 64bit pref]
+[ADOS] kernel: system 00:04: [mem 0xfedc0000-0xfedc7fff] has been reserved
+[ADOS] kernel: system 00:04: [mem 0xfeda0000-0xfeda0fff] has been reserved
+[ADOS] kernel: system 00:04: [mem 0xfeda1000-0xfeda1fff] has been reserved
+[ADOS] kernel: system 00:04: [mem 0xfed20000-0xfed7ffff] could not be reserved
+[ADOS] kernel: system 00:04: [mem 0xfed90000-0xfed93fff] could not be reserved
+[ADOS] kernel: system 00:04: [mem 0xfed45000-0xfed8ffff] could not be reserved
+[ADOS] kernel: system 00:04: [mem 0xfee00000-0xfeefffff] has been reserved
+[ADOS] kernel: system 00:05: [io  0x1800-0x18fe] could not be reserved
+[ADOS] kernel: system 00:05: [mem 0xfe000000-0xfe01ffff] could not be reserved
+[ADOS] kernel: system 00:05: [mem 0xfe04c000-0xfe04ffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfe050000-0xfe0affff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfe0d0000-0xfe0fffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfe200000-0xfe7fffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xff000000-0xffffffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfd000000-0xfd68ffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfd6b0000-0xfd6cffff] has been reserved
+[ADOS] kernel: system 00:05: [mem 0xfd6f0000-0xfdffffff] has been reserved
+[ADOS] kernel: system 00:06: [io  0x2000-0x20fe] has been reserved
+[ADOS] kernel: pnp: PnP ACPI: found 8 devices
+[ADOS] kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[ADOS] kernel: NET: Registered PF_INET protocol family
+[ADOS] kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[ADOS] kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[ADOS] kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[ADOS] kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[ADOS] kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[ADOS] kernel: TCP: Hash tables configured (established 131072 bind 65536)
+[ADOS] kernel: MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+[ADOS] kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[ADOS] kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[ADOS] kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+[ADOS] kernel: NET: Registered PF_XDP protocol family
+[ADOS] kernel: pci 0000:01:00.0: can't claim BAR 6 [mem 0xfff80000-0xffffffff pref]: no compatible bridge window
+[ADOS] kernel: pci 0000:00:07.0: bridge window [io  0x1000-0x0fff] to [bus 02-2b] add_size 1000
+[ADOS] kernel: pci 0000:00:02.0: BAR 9: assigned [mem 0x4020000000-0x40ffffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:02.0: BAR 7: assigned [mem 0x4010000000-0x4016ffffff 64bit]
+[ADOS] kernel: pci 0000:00:07.0: BAR 13: assigned [io  0x6000-0x6fff]
+[ADOS] kernel: pci 0000:00:15.0: BAR 0: assigned [mem 0x4017000000-0x4017000fff 64bit]
+[ADOS] kernel: pci 0000:00:15.3: BAR 0: assigned [mem 0x4017001000-0x4017001fff 64bit]
+[ADOS] kernel: resource: avoiding allocation from e820 entry [mem 0x0009f000-0x000fffff]
+[ADOS] kernel: pci 0000:00:1f.5: BAR 0: assigned [mem 0x4f800000-0x4f800fff]
+[ADOS] kernel: pci 0000:01:00.0: BAR 6: assigned [mem 0x60080000-0x600fffff pref]
+[ADOS] kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [io  0x4000-0x4fff]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [mem 0x5f000000-0x600fffff]
+[ADOS] kernel: pci 0000:00:06.0:   bridge window [mem 0x6000000000-0x6101ffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+[ADOS] kernel: pci 0000:00:07.0:   bridge window [io  0x6000-0x6fff]
+[ADOS] kernel: pci 0000:00:07.0:   bridge window [mem 0x52000000-0x5e1fffff]
+[ADOS] kernel: pci 0000:00:07.0:   bridge window [mem 0x6110000000-0x612bffffff 64bit pref]
+[ADOS] kernel: pci 0000:00:1d.0: PCI bridge to [bus 2c]
+[ADOS] kernel: pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[ADOS] kernel: pci 0000:00:1d.0:   bridge window [mem 0x5e200000-0x5e2fffff]
+[ADOS] kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[ADOS] kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[ADOS] kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[ADOS] kernel: pci_bus 0000:00: resource 7 [mem 0x4f800000-0xbfffffff window]
+[ADOS] kernel: pci_bus 0000:00: resource 8 [mem 0x4000000000-0x7fffffffff window]
+[ADOS] kernel: pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+[ADOS] kernel: pci_bus 0000:01: resource 1 [mem 0x5f000000-0x600fffff]
+[ADOS] kernel: pci_bus 0000:01: resource 2 [mem 0x6000000000-0x6101ffffff 64bit pref]
+[ADOS] kernel: pci_bus 0000:02: resource 0 [io  0x6000-0x6fff]
+[ADOS] kernel: pci_bus 0000:02: resource 1 [mem 0x52000000-0x5e1fffff]
+[ADOS] kernel: pci_bus 0000:02: resource 2 [mem 0x6110000000-0x612bffffff 64bit pref]
+[ADOS] kernel: pci_bus 0000:2c: resource 0 [io  0x3000-0x3fff]
+[ADOS] kernel: pci_bus 0000:2c: resource 1 [mem 0x5e200000-0x5e2fffff]
+[ADOS] kernel: pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+[ADOS] kernel: PCI: CLS 64 bytes, default 64
+[ADOS] kernel: DMAR: Intel-IOMMU force enabled due to platform opt in
+[ADOS] kernel: DMAR: No ATSR found
+[ADOS] kernel: DMAR: No SATC found
+[ADOS] kernel: DMAR: IOMMU feature fl1gp_support inconsistent
+[ADOS] kernel: DMAR: IOMMU feature pgsel_inv inconsistent
+[ADOS] kernel: DMAR: IOMMU feature nwfs inconsistent
+[ADOS] kernel: DMAR: IOMMU feature pds inconsistent
+[ADOS] kernel: DMAR: IOMMU feature dit inconsistent
+[ADOS] kernel: DMAR: IOMMU feature eafs inconsistent
+[ADOS] kernel: DMAR: IOMMU feature prs inconsistent
+[ADOS] kernel: DMAR: IOMMU feature nest inconsistent
+[ADOS] kernel: DMAR: IOMMU feature mts inconsistent
+[ADOS] kernel: DMAR: IOMMU feature sc_support inconsistent
+[ADOS] kernel: DMAR: IOMMU feature dev_iotlb_support inconsistent
+[ADOS] kernel: DMAR: dmar1: Using Queued invalidation
+[ADOS] kernel: DMAR: dmar0: Using Queued invalidation
+[ADOS] kernel: DMAR: dmar2: Using Queued invalidation
+[ADOS] kernel: Trying to unpack rootfs image as initramfs...
+[ADOS] kernel: pci 0000:00:07.0: Adding to iommu group 0
+[ADOS] kernel: pci 0000:00:02.0: Adding to iommu group 1
+[ADOS] kernel: pci 0000:00:00.0: Adding to iommu group 2
+[ADOS] kernel: pci 0000:00:04.0: Adding to iommu group 3
+[ADOS] kernel: pci 0000:00:06.0: Adding to iommu group 4
+[ADOS] kernel: pci 0000:00:08.0: Adding to iommu group 5
+[ADOS] kernel: pci 0000:00:0d.0: Adding to iommu group 6
+[ADOS] kernel: pci 0000:00:0d.2: Adding to iommu group 6
+[ADOS] kernel: pci 0000:00:0e.0: Adding to iommu group 7
+[ADOS] kernel: pci 0000:00:14.0: Adding to iommu group 8
+[ADOS] kernel: pci 0000:00:14.2: Adding to iommu group 8
+[ADOS] kernel: pci 0000:00:14.3: Adding to iommu group 9
+[ADOS] kernel: pci 0000:00:15.0: Adding to iommu group 10
+[ADOS] kernel: pci 0000:00:15.3: Adding to iommu group 10
+[ADOS] kernel: pci 0000:00:16.0: Adding to iommu group 11
+[ADOS] kernel: pci 0000:00:17.0: Adding to iommu group 12
+[ADOS] kernel: pci 0000:00:1d.0: Adding to iommu group 13
+[ADOS] kernel: pci 0000:00:1f.0: Adding to iommu group 14
+[ADOS] kernel: pci 0000:00:1f.3: Adding to iommu group 14
+[ADOS] kernel: pci 0000:00:1f.4: Adding to iommu group 14
+[ADOS] kernel: pci 0000:00:1f.5: Adding to iommu group 14
+[ADOS] kernel: pci 0000:01:00.0: Adding to iommu group 15
+[ADOS] kernel: pci 0000:01:00.1: Adding to iommu group 15
+[ADOS] kernel: pci 0000:2c:00.0: Adding to iommu group 16
+[ADOS] kernel: DMAR: Intel(R) Virtualization Technology for Directed I/O
+[ADOS] kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[ADOS] kernel: software IO TLB: mapped [mem 0x000000003200d000-0x000000003600d000] (64MB)
+[ADOS] kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2cd5a8bb032, max_idle_ns: 440795365915 ns
+[ADOS] kernel: clocksource: Switched to clocksource tsc
+[ADOS] kernel: Initialise system trusted keyrings
+[ADOS] kernel: Key type blacklist registered
+[ADOS] kernel: workingset: timestamp_bits=41 max_order=22 bucket_order=0
+[ADOS] kernel: zbud: loaded
+[ADOS] kernel: integrity: Platform Keyring initialized
+[ADOS] kernel: integrity: Machine keyring initialized
+[ADOS] kernel: Key type asymmetric registered
+[ADOS] kernel: Asymmetric key parser 'x509' registered
+[ADOS] kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[ADOS] kernel: io scheduler mq-deadline registered
+[ADOS] kernel: io scheduler kyber registered
+[ADOS] kernel: io scheduler bfq registered
+[ADOS] kernel: pcieport 0000:00:06.0: PME: Signaling with IRQ 123
+[ADOS] kernel: pcieport 0000:00:07.0: PME: Signaling with IRQ 124
+[ADOS] kernel: pcieport 0000:00:07.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[ADOS] kernel: pcieport 0000:00:1d.0: PME: Signaling with IRQ 125
+[ADOS] kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[ADOS] kernel: Monitor-Mwait will be used to enter C-1 state
+[ADOS] kernel: Monitor-Mwait will be used to enter C-2 state
+[ADOS] kernel: Monitor-Mwait will be used to enter C-3 state
+[ADOS] kernel: ACPI: \_SB_.PR00: Found 3 idle states
+[ADOS] kernel: ACPI: AC: AC Adapter [ACAD] (off-line)
+[ADOS] kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1a/PNP0C0D:00/input/input0
+[ADOS] kernel: ACPI: button: Lid Switch [LID0]
+[ADOS] kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1
+[ADOS] kernel: ACPI: button: Sleep Button [SLPB]
+[ADOS] kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input2
+[ADOS] kernel: ACPI: button: Power Button [PWRB]
+[ADOS] kernel: thermal LNXTHERM:00: registered as thermal_zone0
+[ADOS] kernel: ACPI: thermal: Thermal Zone [TZ00] (28 C)
+[ADOS] kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[ADOS] kernel: ACPI: battery: Slot [BAT1] (battery present)
+[ADOS] kernel: hpet_acpi_add: no address or irqs in _CRS
+[ADOS] kernel: Non-volatile memory driver v1.3
+[ADOS] kernel: Linux agpgart interface v0.103
+[ADOS] kernel: tpm tpm0: tpm_read_log_acpi: Failed to map ACPI memory
+[ADOS] kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+[ADOS] kernel: ACPI: bus type drm_connector registered
+[ADOS] kernel: usbcore: registered new interface driver usbserial_generic
+[ADOS] kernel: usbserial: USB Serial support registered for generic
+[ADOS] kernel: rtc_cmos 00:01: RTC can wake from S4
+[ADOS] kernel: rtc_cmos 00:01: registered as rtc0
+[ADOS] kernel: rtc_cmos 00:01: setting system clock to 2023-05-05T09:10:35 UTC (1683277835)
+[ADOS] kernel: rtc_cmos 00:01: alarms up to one month, y3k, 242 bytes nvram
+[ADOS] kernel: intel_pstate: Intel P-state driver initializing
+[ADOS] kernel: intel_pstate: HWP enabled
+[ADOS] kernel: ledtrig-cpu: registered to indicate activity on CPUs
+[ADOS] kernel: efifb: probing for efifb
+[ADOS] kernel: efifb: framebuffer at 0x4000000000, using 8128k, total 8128k
+[ADOS] kernel: efifb: mode is 1920x1080x32, linelength=7680, pages=1
+[ADOS] kernel: efifb: scrolling: redraw
+[ADOS] kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[ADOS] kernel: Console: switching to colour frame buffer device 240x67
+[ADOS] kernel: fb0: EFI VGA frame buffer device
+[ADOS] kernel: hid: raw HID events driver (C) Jiri Kosina
+[ADOS] kernel: intel_pmc_core INT33A1:00:  initialized
+[ADOS] kernel: drop_monitor: Initializing network drop monitor service
+[ADOS] kernel: Initializing XFRM netlink socket
+[ADOS] kernel: NET: Registered PF_INET6 protocol family
+[ADOS] kernel: Freeing initrd memory: 16324K
+[ADOS] kernel: Segment Routing with IPv6
+[ADOS] kernel: RPL Segment Routing with IPv6
+[ADOS] kernel: In-situ OAM (IOAM) with IPv6
+[ADOS] kernel: NET: Registered PF_PACKET protocol family
+[ADOS] kernel: microcode: Microcode Update Driver: v2.2.
+[ADOS] kernel: resctrl: L2 allocation detected
+[ADOS] kernel: IPI shorthand broadcast: enabled
+[ADOS] kernel: sched_clock: Marking stable (510606538, 6821717)->(561996852, -44568597)
+[ADOS] kernel: registered taskstats version 1
+[ADOS] kernel: Loading compiled-in X.509 certificates
+[ADOS] kernel: Loaded X.509 cert 'Build time autogenerated kernel key: da3e415fe3d680a57b16614dc45869f65df20b1a'
+[ADOS] kernel: zswap: loaded using pool zstd/z3fold
+[ADOS] kernel: Key type .fscrypt registered
+[ADOS] kernel: Key type fscrypt-provisioning registered
+[ADOS] kernel: PM:   Magic number: 7:936:170
+[ADOS] kernel: acpi device:33: hash matches
+[ADOS] kernel: RAS: Correctable Errors collector initialized.
+[ADOS] kernel: Freeing unused decrypted memory: 2036K
+[ADOS] kernel: Freeing unused kernel image (initmem) memory: 3288K
+[ADOS] kernel: Write protecting the kernel read-only data: 30720k
+[ADOS] kernel: Freeing unused kernel image (rodata/data gap) memory: 1720K
+[ADOS] kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[ADOS] kernel: rodata_test: all tests were successful
+[ADOS] kernel: Run /init as init process
+[ADOS] kernel:   with arguments:
+[ADOS] kernel:     /init
+[ADOS] kernel:   with environment:
+[ADOS] kernel:     HOME=/
+[ADOS] kernel:     TERM=linux
+[ADOS] kernel:     BOOT_IMAGE=/boot/vmlinuz-6.2-x86_64
+[ADOS] kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+[ADOS] kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+[ADOS] kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 1
+[ADOS] kernel: vmd 0000:00:0e.0: PCI host bridge to bus 10000:e0
+[ADOS] kernel: pci_bus 10000:e0: root bus resource [bus e0-ff]
+[ADOS] kernel: pci_bus 10000:e0: root bus resource [mem 0x50000000-0x51ffffff]
+[ADOS] kernel: pci_bus 10000:e0: root bus resource [mem 0x6105102000-0x61051fffff 64bit]
+[ADOS] kernel: pci 10000:e0:17.0: [8086:a0d3] type 00 class 0x010601
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x10: [mem 0x00000000-0x00001fff]
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x14: [mem 0x00000000-0x000000ff]
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x18: [io  0x0000-0x0007]
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x1c: [io  0x0000-0x0003]
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x20: [io  0x0000-0x001f]
+[ADOS] kernel: pci 10000:e0:17.0: reg 0x24: [mem 0x50000000-0x500007ff]
+[ADOS] kernel: pci 10000:e0:17.0: PME# supported from D3hot
+[ADOS] kernel: pci 10000:e0:17.0: Adding to iommu group 7
+[ADOS] kernel: pci 10000:e0:1c.0: [8086:09ab] type 00 class 0x088000
+[ADOS] kernel: pci 10000:e0:1c.0: Adding to iommu group 7
+[ADOS] kernel: pci 10000:e0:1c.4: [8086:a0bc] type 01 class 0x060400
+[ADOS] kernel: pci 10000:e0:1c.4: PME# supported from D0 D3hot D3cold
+[ADOS] kernel: pci 10000:e0:1c.4: PTM enabled (root), 4ns granularity
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+[ADOS] kernel: pci 10000:e0:1c.4: Adding to iommu group 7
+[ADOS] kernel: pci 10000:e0:1c.4: Primary bus is hard wired to 0
+[ADOS] kernel: pci 10000:e1:00.0: [1c5c:174a] type 00 class 0x010802
+[ADOS] kernel: pci 10000:e1:00.0: reg 0x10: [mem 0x50100000-0x50103fff 64bit]
+[ADOS] kernel: pci 10000:e1:00.0: reg 0x18: [mem 0x00000000-0x00000fff]
+[ADOS] kernel: pci 10000:e1:00.0: reg 0x1c: [mem 0x00000000-0x00000fff]
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 2
+[ADOS] kernel: xhci_hcd 0000:00:0d.0: Host supports USB 3.1 Enhanced SuperSpeed
+[ADOS] kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.02
+[ADOS] kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ADOS] kernel: usb usb1: Product: xHCI Host Controller
+[ADOS] kernel: usb usb1: Manufacturer: Linux 6.2.12-1-MANJARO xhci-hcd
+[ADOS] kernel: usb usb1: SerialNumber: 0000:00:0d.0
+[ADOS] kernel: hub 1-0:1.0: USB hub found
+[ADOS] kernel: hub 1-0:1.0: 1 port detected
+[ADOS] kernel: pci 10000:e1:00.0: Adding to iommu group 7
+[ADOS] kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.02
+[ADOS] kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ADOS] kernel: usb usb2: Product: xHCI Host Controller
+[ADOS] kernel: usb usb2: Manufacturer: Linux 6.2.12-1-MANJARO xhci-hcd
+[ADOS] kernel: usb usb2: SerialNumber: 0000:00:0d.0
+[ADOS] kernel: hub 2-0:1.0: USB hub found
+[ADOS] kernel: hub 2-0:1.0: 4 ports detected
+[ADOS] kernel: pci 10000:e0:1c.4: PCI bridge to [bus e1]
+[ADOS] kernel: pci 10000:e0:1c.4:   bridge window [io  0x0000-0x0fff]
+[ADOS] kernel: pci 10000:e0:1c.4:   bridge window [mem 0x50100000-0x501fffff]
+[ADOS] kernel: pci 10000:e0:1c.4: Primary bus is hard wired to 0
+[ADOS] kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+[ADOS] kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+[ADOS] kernel: xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+[ADOS] kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+[ADOS] kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+[ADOS] kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+[ADOS] kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.02
+[ADOS] kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ADOS] kernel: usb usb3: Product: xHCI Host Controller
+[ADOS] kernel: usb usb3: Manufacturer: Linux 6.2.12-1-MANJARO xhci-hcd
+[ADOS] kernel: usb usb3: SerialNumber: 0000:00:14.0
+[ADOS] kernel: hub 3-0:1.0: USB hub found
+[ADOS] kernel: hub 3-0:1.0: 12 ports detected
+[ADOS] kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.02
+[ADOS] kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ADOS] kernel: usb usb4: Product: xHCI Host Controller
+[ADOS] kernel: usb usb4: Manufacturer: Linux 6.2.12-1-MANJARO xhci-hcd
+[ADOS] kernel: usb usb4: SerialNumber: 0000:00:14.0
+[ADOS] kernel: hub 4-0:1.0: USB hub found
+[ADOS] kernel: hub 4-0:1.0: 4 ports detected
+[ADOS] kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[ADOS] kernel: pci 10000:e0:1c.4: BAR 14: assigned [mem 0x50000000-0x500fffff]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 0: assigned [mem 0x50100000-0x50101fff]
+[ADOS] kernel: pci 10000:e0:1c.4: BAR 13: no space for [io  size 0x1000]
+[ADOS] kernel: pci 10000:e0:1c.4: BAR 13: failed to assign [io  size 0x1000]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 5: assigned [mem 0x50102000-0x501027ff]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 1: assigned [mem 0x50102800-0x501028ff]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 4: no space for [io  size 0x0020]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 4: failed to assign [io  size 0x0020]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 2: no space for [io  size 0x0008]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 2: failed to assign [io  size 0x0008]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 3: no space for [io  size 0x0004]
+[ADOS] kernel: pci 10000:e0:17.0: BAR 3: failed to assign [io  size 0x0004]
+[ADOS] kernel: pci 10000:e1:00.0: BAR 0: assigned [mem 0x50000000-0x50003fff 64bit]
+[ADOS] kernel: pci 10000:e1:00.0: BAR 2: assigned [mem 0x50004000-0x50004fff]
+[ADOS] kernel: pci 10000:e1:00.0: BAR 3: assigned [mem 0x50005000-0x50005fff]
+[ADOS] kernel: pci 10000:e0:1c.4: PCI bridge to [bus e1]
+[ADOS] kernel: pci 10000:e0:1c.4:   bridge window [mem 0x50000000-0x500fffff]
+[ADOS] kernel: ahci 10000:e0:17.0: version 3.0
+[ADOS] kernel: ahci 10000:e0:17.0: can't derive routing for PCI INT A
+[ADOS] kernel: ahci 10000:e0:17.0: PCI INT A: no GSI
+[ADOS] kernel: ahci 10000:e0:17.0: AHCI 0001.0301 32 slots 1 ports 6 Gbps 0x1 impl SATA mode
+[ADOS] kernel: ahci 10000:e0:17.0: flags: 64bit ncq sntf pm clo only pio slum part deso sadm sds 
+[ADOS] kernel: scsi host0: ahci
+[ADOS] kernel: ata1: SATA max UDMA/133 abar m2048@0x50102000 port 0x50102100 irq 147
+[ADOS] kernel: pcieport 10000:e0:1c.4: can't derive routing for PCI INT A
+[ADOS] kernel: pcieport 10000:e0:1c.4: PCI INT A: no GSI
+[ADOS] kernel: pcieport 10000:e0:1c.4: PME: Signaling with IRQ 148
+[ADOS] kernel: vmd 0000:00:0e.0: Bound to PCI domain 10000
+[ADOS] kernel: usb 3-8: new high-speed USB device number 2 using xhci_hcd
+[ADOS] kernel: usb 3-8: New USB device found, idVendor=0408, idProduct=a061, bcdDevice= 0.04
+[ADOS] kernel: usb 3-8: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ADOS] kernel: usb 3-8: Product: HD User Facing
+[ADOS] kernel: usb 3-8: Manufacturer: SunplusIT Inc
+[ADOS] kernel: ata1: SATA link down (SStatus 0 SControl 300)
+[ADOS] kernel: nvme nvme0: pci function 10000:e1:00.0
+[ADOS] kernel: pcieport 10000:e0:1c.4: can't derive routing for PCI INT A
+[ADOS] kernel: nvme 10000:e1:00.0: PCI INT A: not connected
+[ADOS] kernel: nvme nvme0: 8/0/0 default/read/poll queues
+[ADOS] kernel: nvme nvme0: Ignoring bogus Namespace Identifiers
+[ADOS] kernel:  nvme0n1: p1 p2
+[ADOS] kernel: usb 3-10: new full-speed USB device number 3 using xhci_hcd
+[ADOS] kernel: EXT4-fs (nvme0n1p2): mounted filesystem 242c1cbb-bfc9-4dd1-9adb-29d82d6ea249 with ordered data mode. Quota mode: none.
+[ADOS] kernel: usb 3-10: New USB device found, idVendor=8087, idProduct=0026, bcdDevice= 0.02
+[ADOS] kernel: usb 3-10: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[ADOS] systemd[1]: systemd 252.9-1-manjaro running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified)
+[ADOS] systemd[1]: Detected architecture x86-64.
+[ADOS] systemd[1]: Hostname set to <manjaro>.
+[ADOS] systemd[1]: bpf-lsm: LSM BPF program attached
+[ADOS] systemd[1]: Queued start job for default target Graphical Interface.
+[ADOS] systemd[1]: Created slice Slice /system/getty.
+[ADOS] systemd[1]: Created slice Slice /system/modprobe.
+[ADOS] systemd[1]: Created slice User and Session Slice.
+[ADOS] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[ADOS] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[ADOS] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[ADOS] systemd[1]: Reached target Local Encrypted Volumes.
+[ADOS] systemd[1]: Reached target Login Prompts.
+[ADOS] systemd[1]: Reached target Local Integrity Protected Volumes.
+[ADOS] systemd[1]: Reached target Remote File Systems.
+[ADOS] systemd[1]: Reached target Slice Units.
+[ADOS] systemd[1]: Reached target Local Verity Protected Volumes.
+[ADOS] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[ADOS] systemd[1]: Listening on LVM2 poll daemon socket.
+[ADOS] systemd[1]: Listening on Process Core Dump Socket.
+[ADOS] systemd[1]: Listening on Journal Audit Socket.
+[ADOS] systemd[1]: Listening on Journal Socket (/dev/log).
+[ADOS] systemd[1]: Listening on Journal Socket.
+[ADOS] systemd[1]: Listening on udev Control Socket.
+[ADOS] systemd[1]: Listening on udev Kernel Socket.
+[ADOS] systemd[1]: Mounting Huge Pages File System...
+[ADOS] systemd[1]: Mounting POSIX Message Queue File System...
+[ADOS] systemd[1]: Mounting Kernel Debug File System...
+[ADOS] systemd[1]: Mounting Kernel Trace File System...
+[ADOS] systemd[1]: Starting Create List of Static Device Nodes...
+[ADOS] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[ADOS] systemd[1]: Starting Load Kernel Module configfs...
+[ADOS] systemd[1]: Starting Load Kernel Module dm_mod...
+[ADOS] systemd[1]: Starting Load Kernel Module drm...
+[ADOS] systemd[1]: Starting Load Kernel Module fuse...
+[ADOS] systemd[1]: Starting Load Kernel Module loop...
+[ADOS] systemd[1]: Starting Load Kernel Modules...
+[ADOS] systemd[1]: Starting Remount Root and Kernel File Systems...
+[ADOS] systemd[1]: Starting Coldplug All udev Devices...
+[ADOS] systemd[1]: Mounted Huge Pages File System.
+[ADOS] systemd[1]: Mounted POSIX Message Queue File System.
+[ADOS] systemd[1]: Mounted Kernel Debug File System.
+[ADOS] systemd[1]: Mounted Kernel Trace File System.
+[ADOS] kernel: loop: module loaded
+[ADOS] kernel: device-mapper: uevent: version 1.0.3
+[ADOS] kernel: device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[ADOS] kernel: fuse: init (API version 7.38)
+[ADOS] systemd[1]: Finished Create List of Static Device Nodes.
+[ADOS] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[ADOS] systemd[1]: Finished Load Kernel Module configfs.
+[ADOS] systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+[ADOS] systemd[1]: Finished Load Kernel Module dm_mod.
+[ADOS] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[ADOS] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[ADOS] systemd[1]: Finished Load Kernel Module drm.
+[ADOS] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[ADOS] systemd[1]: Finished Load Kernel Module fuse.
+[ADOS] systemd[1]: modprobe@loop.service: Deactivated successfully.
+[ADOS] systemd[1]: Finished Load Kernel Module loop.
+[ADOS] systemd[1]: Finished Remount Root and Kernel File Systems.
+[ADOS] systemd[1]: Finished Coldplug All udev Devices.
+[ADOS] systemd[1]: Activating swap /swapfile...
+[ADOS] systemd[1]: Mounting FUSE Control File System...
+[ADOS] systemd[1]: Mounting Kernel Configuration File System...
+[ADOS] kernel: Adding 8388604k swap on /swapfile.  Priority:-2 extents:123 across:179699708k SSFS
+[ADOS] systemd[1]: First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[ADOS] systemd[1]: Rebuild Hardware Database was skipped because no trigger condition checks were met.
+[ADOS] systemd[1]: Starting Load/Save Random Seed...
+[ADOS] systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+[ADOS] systemd[1]: Starting Create System Users...
+[ADOS] systemd[1]: Activated swap /swapfile.
+[ADOS] systemd[1]: Mounted FUSE Control File System.
+[ADOS] systemd[1]: Mounted Kernel Configuration File System.
+[ADOS] systemd[1]: Finished Load/Save Random Seed.
+[ADOS] systemd[1]: Finished Create System Users.
+[ADOS] systemd[1]: First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[ADOS] systemd[1]: Reached target Swaps.
+[ADOS] systemd[1]: Mounting Temporary Directory /tmp...
+[ADOS] systemd[1]: Starting Create Static Device Nodes in /dev...
+[ADOS] systemd[1]: Mounted Temporary Directory /tmp.
+[ADOS] systemd[1]: Finished Create Static Device Nodes in /dev.
+[ADOS] systemd[1]: Reached target Preparation for Local File Systems.
+[ADOS] systemd[1]: Virtual Machine and Container Storage (Compatibility) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/machines.raw).
+[ADOS] systemd[1]: Reached target Local File Systems.
+[ADOS] systemd[1]: Entropy Daemon based on the HAVEGE algorithm was skipped because of an unmet condition check (ConditionKernelVersion=<5.6).
+[ADOS] systemd[1]: Starting Rebuild Dynamic Linker Cache...
+[ADOS] systemd[1]: Starting Set Up Additional Binary Formats...
+[ADOS] systemd[1]: Store a System Token in an EFI Variable was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/LoaderFeatures-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f).
+[ADOS] systemd[1]: Starting Journal Service...
+[ADOS] systemd[1]: Commit a transient machine-id on disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+[ADOS] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[ADOS] systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 240 (systemd-binfmt)
+[ADOS] systemd[1]: Mounting Arbitrary Executable File Formats File System...
+[ADOS] systemd[1]: Mounted Arbitrary Executable File Formats File System.
+[ADOS] systemd-journald[241]: Journal started
+[ADOS] systemd-journald[241]: Runtime Journal (/run/log/journal/3de2b84d2fdd4dacb781bceb6ba45395) is 8.0M, max 789.5M, 781.5M free.
+[ADOS] systemd-modules-load[227]: Inserted module 'crypto_user'
+[ADOS] systemd-udevd[242]: Using default interface naming scheme 'v252'.
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-binfmt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] systemd[1]: Finished Set Up Additional Binary Formats.
+[ADOS] kernel: audit: type=1130 audit(1683277837.560:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-binfmt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] systemd[1]: Started Journal Service.
+[ADOS] kernel: audit: type=1130 audit(1683277837.560:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] systemd[1]: Starting Flush Journal to Persistent Storage...
+[ADOS] systemd-journald[241]: Time spent on flushing to /var/log/journal/3de2b84d2fdd4dacb781bceb6ba45395 is 23.473ms for 962 entries.
+[ADOS] systemd-journald[241]: System Journal (/var/log/journal/3de2b84d2fdd4dacb781bceb6ba45395) is 2.2G, max 4.0G, 1.7G free.
+[ADOS] systemd-journald[241]: Received client request to flush runtime journal.
+[ADOS] kernel: audit: type=1130 audit(1683277837.586:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] systemd-udevd[242]: /etc/udev/rules.d/99-megasync-udev.rules:1 The line takes no effect, ignoring.
+[ADOS] systemd[1]: Started Rule-based Manager for Device Events and Files.
+[ADOS] systemd[1]: Finished Flush Journal to Persistent Storage.
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] kernel: audit: type=1130 audit(1683277837.670:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] kernel: input: Intel HID events as /devices/platform/INTC1051:00/input/input4
+[ADOS] kernel: intel-hid INTC1051:00: platform supports 5 button array
+[ADOS] kernel: input: Acer Wireless Radio Control as /devices/LNXSYSTM:00/10251229:00/input/input5
+[ADOS] kernel: Consider using thermal netlink events interface
+[ADOS] kernel: input: Intel HID 5 button array as /devices/platform/INTC1051:00/input/input6
+[ADOS] systemd[1]: Finished Rebuild Dynamic Linker Cache.
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] kernel: audit: type=1130 audit(1683277837.700:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] systemd[1]: Starting Create Volatile Files and Directories...
+[ADOS] mtp-probe[310]: checking bus 3, device 2: "/sys/devices/pci0000:00/0000:00:14.0/usb3/3-8"
+[ADOS] mtp-probe[310]: bus: 3, device: 2 was not an MTP device
+[ADOS] kernel: EDAC igen6: v2.5
+[ADOS] systemd[1]: Finished Create Volatile Files and Directories.
+[ADOS] systemd[1]: Starting Rebuild Journal Catalog...
+[ADOS] audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] audit: BPF prog-id=29 op=LOAD
+[ADOS] kernel: audit: type=1130 audit(1683277837.813:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ADOS] kernel: audit: type=1334 audit(1683277837.816:8): prog-id=29 op=LOAD
+[ADOS] systemd[1]: Starting Network Time Synchronization...
+[ADOS] kernel: input: PC Speaker as /devices/platform/pcspkr/input/input7
+[ADOS] kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+[ADOS] kernel: ACPI: bus type thunderbolt registered
+[ADOS] kernel: spi-nor spi0.0: XM25QH128A (16384 Kbytes)
+[ADOS] systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+[ADOS] audit[332]: SYSTEM_BOOT pid=332 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+[ADOS] kernel: Creating 1 MTD partitions on "0000:00:1f.5":
+[ADOS] kernel: audit: type=1127 audit(1683277837.836:9): pid=332 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
