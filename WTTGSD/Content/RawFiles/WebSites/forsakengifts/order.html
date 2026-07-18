@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Global/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <title>Forsaken Gifts - Order</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 class="snap">Forsaken <a class="CPTAG">Gifts</a></h1>
+    </div>
+    
+    <div class="menu container">
+      <a onClick="LinkClick('index.html')" class="active">inicio</a>
+      <a onClick="LinkClick('gifts.html')" class="active">regalos</a>
+      <a onClick="LinkClick('order.html')" class="active" id="sel">pedido</a>
+    </div>
+    
+    <div class="newContainer">
+      <p>
+        Ofrecemos <a class="CFTAG">opciones</a> de envío a tarifa plana para todos nuestros regalos.
+        Los precios empiezan <em class="PTAG lowWhite"></em> en 4 <a class="CPTAG">DOSCoin</a> de envío y llegan hasta 22 DOSCoin
+        para la opción de entrega más rápida.
+      </p>
+      <p>
+        Al elegir una zona de entrega, ten en cuenta que <a class="CFTAG">nos</a> pondremos en contacto contigo con la
+        ubicación exacta de entrega del regalo una vez esté en tránsito. La ubicación
+        estará a una distancia asequible en coche desde tu zona de entrega <a class="CPTAG">seleccionada</a>.
+      </p>
+      <p>
+        Elige un regalo para ver su precio en el carrito. <em class="PTAG lowWhite"></em>
+      </p>
+      <p>
+        DOSCoin es la única <a class="CFTAG">moneda</a> aceptada.
+      </p>
+    </div>
+
+    <div id="order-form" class="order-container newContainer">
+      <form class="order-form">
+        <div class="row">
+          <select id="gift-select">
+            <option value="" disabled selected hidden>REGALO</option>
+            <option value="0">Charlotte</option>
+            <option value="1">Ava</option>
+            <option value="2">Noah</option>
+            <option value="3">Jackson</option>
+            <option value="4">Sienna</option>
+          </select>
+          <div class="price-inline">
+            <img src="img/DOSCoinSymbol.png" class="currency-icon" />
+            <span id="gift-price">290</span>
+          </div>
+        </div>
+        <div class="row">
+          <select id="shipping-select">
+            <option value="" disabled selected hidden>ENVÍO</option>
+            <option value="0">Estándar</option>
+            <option value="1">Exprés</option>
+            <option value="2">24 horas</option>
+          </select>
+          <div class="price-inline">
+            <img src="img/DOSCoinSymbol.png" class="currency-icon" />
+            <span id="shipping-price">4</span>
+          </div>
+        </div>
+        <input type="text" id="delivery-area" placeholder="Introduce la zona de entrega" />
+        <input type="email" id="contact-email" placeholder="Introduce el correo de contacto" />
+        <div class="order-bottom">
+          <button type="button" id="place-order">Realizar pedido</button>
+          <div id="total-output">
+            <div class="total-price" id="total-price">
+              Total:
+              <a class="CPTAG"><img src="img/DOSCoinSymbol.png" class="currency-icon" /></a>
+              <span id="total">0</span>
+            </div>
+            <div class="total-message" id="total-message">
+              No se ha seleccionado regalo/envío
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="product-image">
+        <img id="product-image" src="img/blankGift.png" />
+      </div>
+    </div>
+
+    <div id="error-message" class="error-message newContainer" style="display: none; color: #FF0000">
+        No se ha podido completar el pedido en este momento.<br>
+        Vuelve <a class="CFTAG">más tarde</a> e inténtalo de nuevo.
+    </div>
+  </body>
+
+  <script type="text/javascript">
+      const giftSelect = document.getElementById("gift-select");
+      const shippingSelect = document.getElementById("shipping-select");
+      const giftPriceSpan = document.getElementById("gift-price");
+      const shippingPriceSpan = document.getElementById("shipping-price");
+      const totalPriceDiv = document.getElementById("total-price");
+      const totalMessageDiv = document.getElementById("total-message");
+      const totalSpan = document.getElementById("total");
+      const errorMessage = document.getElementById("error-message");
+      const orderForm = document.getElementById("order-form");
+
+      const prices = [290, 380, 610, 460, 515];
+      const shipping = [4, 12, 22];
+
+      let orderClicked = false;
+
+      function updatePrices() {
+          const giftIndex = giftSelect.value;
+          const shippingIndex = shippingSelect.value;
+
+          const giftPrice = giftIndex === "" ? 0 : prices[giftIndex];
+          const shippingPrice = shippingIndex === "" ? 0 : shipping[shippingIndex];
+
+          giftPriceSpan.textContent = giftPrice;
+          shippingPriceSpan.textContent = shippingPrice;
+
+          const productImage = document.getElementById("product-image");
+          if (giftIndex === "") {
+              productImage.src = "img/blankGift.png";
+          } else {
+              productImage.src = `img/puppet${giftIndex}.png`;
+          }
+
+          if (giftIndex !== "" && shippingIndex !== "") {
+              totalPriceDiv.style.display = "inline-flex";
+              totalMessageDiv.style.display = "none";
+              totalSpan.textContent = giftPrice + shippingPrice;
+          }else{
+              totalPriceDiv.style.display = "none";
+              totalMessageDiv.style.display = orderClicked ? "inline" : "none";
+          }
+
+          if (orderClicked && (giftIndex === "" || shippingIndex === "")) {
+              errorMessage.style.display = "none";
+          }
+      }
+
+      document.getElementById("place-order").addEventListener("click", function () {
+          const giftIndex = giftSelect.value;
+          const shippingIndex = shippingSelect.value;
+
+          orderClicked = true;
+
+          if(giftIndex !== "" && shippingIndex !== "") {
+              errorMessage.style.display = "block";
+              orderForm.style.display = "none";
+          }else{
+              errorMessage.style.display = "none";
+          }
+          updatePrices();
+      });
+
+      giftSelect.addEventListener("change", updatePrices);
+      shippingSelect.addEventListener("change", updatePrices);
+      document.addEventListener("DOMContentLoaded", updatePrices);
+</script>
+
+</html>

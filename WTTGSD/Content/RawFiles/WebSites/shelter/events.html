@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <link rel="stylesheet" href="../Global/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="script.js"></script>
+    <div class="header">
+      <div class="logo">
+        <a onClick="LinkClick('index.html')" class="active">shelter</a>
+      </div>
+      <div class="navbar">
+        <a onClick="LinkClick('donate.html')" class="active">donar/suscribirse</a>
+        <a onClick="LinkClick('events.html')" class="active">eventos</a>
+      </div>
+    </div>
+    <div class="bodyText">
+      <span>
+        Los eventos se actualizan cada dos semanas. La próxima actualización ocurre
+        <span style="font-family: 'Goldman'">mañana a las <a class="CFTAG">0600</a> ZULU.</span>
+        <em class="PTAG"></em>
+
+        <br /><br />Haz clic en <a class="CPTAG">cualquier</a> evento subrayado para ver una repetición.
+      </span>
+      <div class="events">
+        <span class="title">44.<a class = "CPTAG">490</a> minutos transcurridos</span>
+        <br />
+        <span class="description" id="44490" onclick="playVideo(id)">
+          La madre suplica ser liberada antes de acabar comiendo del váter.
+        </span>
+        <br /><em class="PTAG"></em><br />
+        <span class="title">43.481 minutos transcurridos</span>
+        <br />
+        <span class="description" id="43481" onclick="playVideo(id)">
+          La hija se descontrola después de que se añadan 5109 minutos al contador.
+        </span>
+        <br /><br />
+        <span class="title"><a class = "CFTAG">41.766</a> minutos transcurridos</span>
+        <br />
+        <span class="description" id="41766" onclick="playVideo(id)">
+          La familia llora suplicando que cesen las donaciones. Algunos miembros arrojan heces
+          a la cámara para impedir la grabación.
+        </span>
+        <br /><br />
+        <span class="title">37.998 minutos transcurridos</span>
+        <br />
+        <span class="description" id="37998" onclick="playVideo(id)">
+          La madre se desmaya por levantarse demasiado rápido. Al golpear el suelo
+          se rompe la nariz y queda inconsciente.
+        </span>
+        <br /><em class="PTAG"></em><br />
+        <span class="title">36.815 minutos transcurridos</span>
+        <br />
+        <span class="description" id="36815" onclick="playVideo(id)">
+          El padre se disloca el tobillo para recuperar un suministro de comida, de otro modo inalcanzable,
+          para la familia.
+        </span>
+        <br /><br />
+        <span class="title">32.307 minutos transcurridos</span>
+        <br />
+        <span class="description" id="32307" onclick="playVideo(id)">
+          Se reta a la hija a comerse un dedo amputado de la mano del padre para
+          reducir el contador en 3100 minutos. Le cuesta, pero lo consigue.
+        </span>
+        <br /><em class="PTAG"></em><br />
+        <span class="title">30.242 minutos transcurridos</span>
+        <br />
+        <span class="description" id="30242" onclick="playVideo(id)">
+          Se reta al padre a amputarse el dedo anular para que se resten 2200 minutos
+          del contador. Momentos después de la amputación, el contador aumenta en
+          2841 minutos por cortesía de las donaciones.
+        </span>
+        <br /><br />
+      </div>
+      <div class="playerText">
+        <span style="font-size: 24px">
+          Haz clic en un evento subrayado de arriba para <a class="CPTAG">reproducirlo</a>.
+        </span>
+        <br />
+        <span
+          >Nota: Debes ser suscriptor para ver cualquiera de los eventos.
+          <em class="PTAG"></em> <br />Puedes suscribirte
+          <a
+            onClick="LinkClick('donate.html')" class="active"
+            style="text-decoration: underline"
+            >aquí</a
+          >.
+        </span>
+        <br /><br />
+      </div>
+      <span id="videoTitle">&lt;Evento seleccionado&gt;.<a class="CFTAG">webm</a></span>
+      <br /><br />
+      <div class="eventVideo">
+        <div class="accessCode">
+          <span>INTRODUCE EL CÓDIGO DE ACCESO DE SUSCRIPTOR</span>
+          <br />
+          <input
+            type="password"
+            id="inputAccessCode"
+            onkeydown="accessCheck(event)"
+          />
+        </div>
+        <div class="VIDEO-TAG"></div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

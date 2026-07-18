@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <title>Drug Tickets</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../Global/reset.css"/>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/rXClipboard.png" alt="Logo">
+        <h1>Drug Tickets</h1>
+    </header>
+
+    <main>
+        <p>
+            ¿Cansado de tener que buscar un buen proveedor para tus necesidades de drogas? ¿Buscas <a class="CFTAG">reabastecerte</a> con más regularidad? ¿Qué tal saber con certeza que tu dinero, tan duramente ganado, se destina a lo que de verdad deseas?
+        </p><br>
+        <p>
+            Si has respondido que sí a alguna de las preguntas anteriores, elimina al <a class="CPTAG">intermediario</a> <em class="PTAG text-dark"></em> y ve directamente a una farmacia a recoger tus drogas. Consigue la cantidad que necesitas con una frecuencia acorde a tu consumo.
+        </p><br>
+        <p>
+            ¿Quieres más? Simplemente pide de más y compártelo con otros, o <a class="CFTAG">véndelo</a> tú mismo y recupera tu dinero rápidamente.
+        </p><br>
+        <p id="notice">
+            ¿Solo buscas pedir drogas? Conecta con camellos por el canal ACRS #VelvetRoad. Acceso 24/7
+        </p>
+        <h3>Talonarios de recetas disponibles por <a class="CFTAG">estado</a> de EE. UU.</h3>
+        
+        <em class="PTAG text-dark" style="position: absolute; margin-left: 280px; margin-top: 107px; color: rgb(198, 198, 8)"></em>
+        <img id="themap" src="img/map.png" alt="map">
+
+        <small>
+            Aviso: Las sustancias controladas tienen leyes más estrictas en ciertos estados, así que ten cuidado al pedir un talonario de recetas si no resides actualmente en el estado del que procede y piensas usarlo por ese motivo.
+        </small>
+        <small>
+            Las recetas solo son válidas dentro de EE. UU. y sus territorios (Puerto <a class="CPTAG">Rico</a>, Islas Vírgenes de EE. UU., Samoa Americana, Guam, Islas Marianas del Norte)<em class="PTAG text-dark"></em>
+        </small>
+        <div class="pads">
+            <img src="img/pillBottle.png" alt="Pill Bottle">
+            <h4>Missouri</h4>
+            <small>(total de talonarios disponibles 48)</small><br>
+            <div class="order">
+                <span>-29 talonarios de recetas a la venta |40 hojas de receta cada uno |84 DOSCoin/talonario</span><br>
+                <label for="numberSize">Cantidad:</label>
+                <input type="number" min="1" max="29" name="quantity" id="numberSize" oninput="(!validity.rangeOverflow||(value=29)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+                <span>-19 talonarios de recetas a la venta |40 hojas de receta cada uno |77 DOSCoin/talonario</span><br>
+                <label for="numberSize1">Cantidad:</label>
+                <input type="number" min="1" max="19" name="quantity" id="numberSize1" oninput="(!validity.rangeOverflow||(value=19)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize1').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+            </div>
+        </div>
+
+        <div class="pads">
+            <img src="img/pillBottle.png" alt="Pill Bottle">
+            <h4>Wyoming</h4>
+            <small>(total de talonarios disponibles 108)</small><br>
+            <div class="order">
+                <span>-35 talonarios de recetas a la venta |40 hojas de receta cada uno |44 DOSCoin/talonario</span><br>
+                <label for="numberSize2">Cantidad:</label>
+                <input type="number" min="1" max="35" name="quantity" id="numberSize2" oninput="(!validity.rangeOverflow||(value=35)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize2').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+                <span>-52 talonarios de recetas a la venta |40 hojas de receta cada uno |43 DOSCoin/talonario</span><br>
+                <label for="numberSize3">Cantidad:</label>
+                <input type="number" min="1" max="52" name="quantity" id="numberSize3" oninput="(!validity.rangeOverflow||(value=52)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize3').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+                <span>-21 talonarios de recetas a la venta |40 hojas de receta cada uno |37 DOSCoin/talonario</span><br>
+                <label for="numberSize4">Cantidad:</label>
+                <input type="number" min="1" max="21" name="quantity" id="numberSize4" oninput="(!validity.rangeOverflow||(value=21)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize4').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+            </div>
+        </div>
+        <div class="pads">
+            <img src="img/pillBottle.png" alt="Pill Bottle">
+            <h4>Georgia</h4>
+            <small>(total de talonarios <a class="CPTAG">disponibles</a> 22)</small><br>
+            <div class="order">
+                <span>-16 talonarios de recetas a la venta |50 hojas de receta cada uno |91 DOSCoin/talonario</span><br>
+                <label for="numberSize5">Cantidad:</label>
+                <input type="number" min="1" max="16" name="quantity" id="numberSize5" oninput="(!validity.rangeOverflow||(value=16)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize5').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+                <span>-6 talonarios de recetas a la venta |50 hojas de receta cada uno |100 DOSCoin/talonario</span><br>
+                <label for="numberSize6">Cantidad:</label>
+                <input type="number" min="1" max="6" name="quantity" id="numberSize6" oninput="(!validity.rangeOverflow||(value=6)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize6').value != 0) LinkClick('checkout.html')" class="active"></a><br>
+            </div>
+        </div>
+
+        <div class="pads">
+            <img src="img/pillBottle.png" alt="Pill Bottle">
+            <h4>Virginia Occidental</h4>
+            <small>(total de talonarios disponibles 94)</small><br>
+            <div class="order">
+                <span>-94 talonarios de recetas a la venta |30 hojas de receta cada uno |56 DOSCoin/talonario</span><br>
+                <label for="numberSize7">Cantidad:</label>
+                <input type="number" min="1" max="94" name="quantity" id="numberSize7" oninput="(!validity.rangeOverflow||(value=94)) && (!validity.rangeUnderflow||(value=1)) &&
+                (!validity.stepMismatch||(value=parseInt(this.value)));" placeholder="# -----">
+                <hr>
+                <a onClick="if(document.getElementById('numberSize7').value != 0) LinkClick('checkout.html')" class="active"></a><br><em class="PTAG text-dark" style="font-size: 0.8em; margin-top: -10px; position: absolute;"></em>
+            </div>
+        </div><br><br><br>
+    </main>
+</body>
+</html>

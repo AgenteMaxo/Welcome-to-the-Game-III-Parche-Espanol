@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="../Global/reset.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Crisis Calls</title>
+
+<body class="crisis-calls-main">
+
+    <div class="banner-wrapper">
+        <div class="banner-crop">
+            <img src="img/Header.png" class="banner-img"/>
+        </div>
+        <div class="banner-text">CRISIS<br>CALLS</div>
+    </div>
+    <div class="interested-section">
+        <span class="interested-text">¿Interesado?</span>
+        <a onclick="LinkClick('account.html')" class="active">
+            <button class="interested-button no-disable">INICIAR SESIÓN | REGISTRARSE</button>
+        </a>
+    </div>
+
+    <div class="content-inner">
+        <p>
+            Cada minuto se cometen múltiples delitos dentro de EE. UU. Violentos, no violentos, contra la propiedad: donde hay gente, hay delincuencia. Sabiendo eso, seguramente apostarías a que habrá más delitos en el futuro, ¿no? ¿Y si pones tu dinero sobre la mesa y apuestas EXACTAMENTE qué delitos ocurrirán una noche concreta?
+        </p>
+        <br>
+        <p>
+            CrisisCalls viaja por todo EE. UU. y pincha las frecuencias de la policía local, <a class = "CFTAG">retransmitiendo</a> todas las transmisiones. El último viernes de cada mes nuestras puertas de apuestas se abren durante el fin de semana y los jugadores pueden hacer apuestas combinadas durante un tiempo limitado tras el inicio de la retransmisión en este sitio.
+        </p>
+        <br>
+        <p>
+            Cada apuesta enviada es válida <em class="PTAG text-dark" style="color: lightblue;"></em> solo para esa noche; cuando la retransmisión está activa se muestra una cuenta atrás nocturna. Cualquier usuario de este sitio puede escuchar o ver los subtítulos generados por nuestro software de IA.
+        </p>
+        <br>
+        <p>
+            Con el tiempo, quienes presten atención podrán deducir la ubicación de origen de la transmisión, así que espera que las últimas noches del fin de semana traigan más delincuencia, cuando los jugadores se aseguren de que sus apuestas se cumplan.
+        </p>
+    </div>
+
+    <div class="betting-window-info">
+        La próxima <a class="CPTAG">ventana</a> de apuestas abre en 19 días
+    </div>
+
+    <div class="rebroadcast-section">
+        RETRANSMISIÓN<br>DETENIDA
+    </div>
+
+    <div class="closed-captions-container">
+        <button id="toggle-captions" class="toggle-button no-disable">+ Subtítulos</button>
+        <div id="captions-content" class="captions-content">
+            <p>No se pudo obtener la transmisión. La retransmisión está detenida.</p>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="interested-section" style="margin-bottom: 40px;">
+            <span class="interested-text">¿Quieres <a class="CPTAG">apostar?</a></span>
+            <a onclick="LinkClick('account.html')" class="active">
+                <button class="interested-button no-disable">INICIAR SESIÓN | REGISTRARSE</button>
+            </a>
+        </div>
+        <div class="selection-text">
+            <p>Haz una selección</p>
+            <p style="font-size: 15px; font-family: 'Merriweather-Italic'">El multiplicador total de la apuesta debe alcanzar AL MENOS x5 <em class="PTAG text-dark" style="color: lightblue;"></em> para enviar una apuesta.</p>
+            <p style="font-size: 15px; font-family: 'Merriweather-Italic'">Todas las selecciones deben ocurrir la noche de tu apuesta.
+        </div>
+    </div>
+
+    <div class="betting-container">
+        <br />
+        <div id="container">
+            <div id="categoryNonViolent">
+                <img class="multiplier-image" src="img/+x0.2.png">
+              <div id="nonViolent">
+                  <button type="button" class="btn" id="opt1" value="Posesión de drogas (delito grave)">Posesión de drogas (delito grave)</button>
+                  <button type="button" class="btn" id="opt2" value="Prostitución">Prostitución</button>
+                  <button type="button" class="btn" id="opt3" value="Conducción ebria">Conducción ebria</button>
+                </div>
+              </div>
+            <br>
+            <div id="categoryProperty">
+                <img class="multiplier-image" src="img/+x0.5.png">
+              <div id="property">
+                  <button type="button" class="btn" id="opt4" value="Allanamiento">Allanamiento</button>
+                  <button type="button" class="btn" id="opt5" value="Hurto mayor">Hurto mayor</button>
+                  <button type="button" class="btn" id="opt6" value="Robo de vehículo">Robo de vehículo</button>
+                  <button type="button" class="btn" id="opt7" value="Destrucción/Daños/Vandalismo de propiedad">Destrucción/Daños/Vandalismo de propiedad</button>
+                  <button type="button" class="btn" id="opt8" value="Incendio provocado">Incendio provocado</button>
+                </div>
+              </div>
+            <br>
+            <div id="categoryLessViolent">
+                <img class="multiplier-image" src="img/+x0.75.png">
+              <div id="lessViolent">
+                  <button type="button" class="btn" id="opt9" value="Disputa/Situación doméstica">Disputa/Situación doméstica</button>
+                  <button type="button" class="btn" id="opt10" value="Intento de suicidio/Suicidio">Intento de suicidio/Suicidio</button>
+                  <button type="button" class="btn" id="opt11" value="Fuga de la policía">Fuga de la policía</button>
+                  <button type="button" class="btn" id="opt12" value="Persona armada">Persona armada</button>
+                </div>
+              </div>
+            <br>
+            <div id="categoryMoreViolent">
+                <img class="multiplier-image" src="img/+x0.95.png">
+              <div id="commonViolent">
+                  <button type="button" class="btn" id="opt13" value="Agresión agravada">Agresión agravada</button>
+                  <button type="button" class="btn" id="opt14" value="Atraco">Atraco</button>
+                  <button type="button" class="btn" id="opt15" value="Tiroteo/Disparos">Tiroteo/Disparos</button>
+                  <button type="button" class="btn" id="opt16" value="Agresión con arma mortal">Agresión con arma mortal</button>
+                  <button type="button" class="btn" id="opt17" value="Atropello con fuga">Atropello con fuga</button>
+                  <button type="button" class="btn" id="opt18" value="Agresión sexual agravada">Agresión sexual agravada</button>
+                </div>
+            <br>
+                <img class="multiplier-image-2" src="img/+x2.png">
+              <div id="rareViolent">
+                  <button type="button" class="btn" id="opt19" value="Homicidio">Homicidio</button>
+                  <button type="button" class="btn" id="opt20" value="Secuestro/Rapto">Secuestro/Rapto</button>
+                </div>
+              </div>
+        </div>
+
+        <br>
+        <button id="clearBet" class="reset-bet-button no-disable" onclick="resetBet()">
+            <img src="img/ResetBetButton.png" alt="Reiniciar apuesta">
+        </button>
+        <br>
+        <br>
+
+        <div class="parlay-container">
+            <div class="parlay-section section-1">
+                <h2> Tu <a class = "CFTAG">apuesta</a> combinada</h2>
+                <p style="font-family: 'Merriweather-Regular'; font-size: 15px;"> (<img class="dos-coin-image" src="img/DOSCoinSymbol.png">25 mínimo / <img class="dos-coin-image" src="img/DOSCoinSymbol.png">400 apuesta máxima <em class="PTAG text-dark" style="color: lightblue;"></em>) </p>
+            </div>
+
+            <div class="parlay-section section-2">
+                <ul id="betsChosen">
+                </ul>
+            </div>
+
+            <div class="parlay-section section-3">
+                <label for="placeBet"> Cantidad apostada</label>
+                <input disabled autocomplete="off" type="number" min="0" max="400" name="wagered" id="betInput" oninput="(!validity.rangeOverflow||(value=400)) && (!validity.rangeUnderflow||(value=0)) && (!validity.stepMismatch||(value=parseInt(this.value)));">
+                <label id="betMultiplier" for="multiplier"></label>
+            </div>
+
+            <div class="parlay-section section-4">
+                <label>Ganancia potencial total:
+                    <label id="potentialWin"></label>
+                </label>
+            </div>
+        </div>
+
+        <div class="submit-row">
+            <img src="img/SubmitBetButton.png" id="sendWager" onclick="verifyWager()" alt="Enviar apuesta">
+            <label id="verifyStatus"></label>
+        </div>
+
+
+        <div class="bonus-section">
+            <a class="CPTAG"><img src="img/BONUS-WHEEL-SPIN.png" alt="Tirada de la ruleta extra" class="bonus-image"></a>
+            <p class="bonus-description">
+                La ruleta solo puede girarse una vez, y solo después de enviar tu apuesta.<br>
+                Una tirada añade un delito aleatorio a tu combinada, además de la posibilidad de un...
+            </p>
+            <img src="img/x5MEGA-MULTIPLIER.png" alt="Megamultiplicador x5" class="bonus-image" style="margin-bottom: -5px;">
+        </div>
+
+        <div id="theWheel">
+            <div id="preview-Wheel">
+
+            </div>
+
+            <div class="wheel-image-wrapper">
+                <label id="wheelButtonPreview" onclick="spinPreview()">Tirada de prueba</label>
+
+                <div class="wheel-visual">
+                    <img src="img/staticWheel.png" id="wheel-image" alt="Ruleta extra">
+                    <img src="img/WheelTrim.png" id="wheel-trim" alt="Marco de la ruleta">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="real-spin-section">
+            <img src="img/RealWheelSpinButton.png" alt="Botón de tirada real" class="real-spin-image">
+            <p class="real-spin-caption">(solo activo tras enviar la apuesta)</p>
+        </div>
+
+        <div id="bonusWheel">
+            <h2>Resultado de la tirada de prueba (no se aplica a la apuesta):</h2>
+            <h3 id="wheelResult"></h3>
+            <label id="wheelPotential"></label>
+            <label id="bonusPotential"></label>
+        </div>
+
+    </div>
+
+    <div class="margin-for-info">
+    </div>
+
+    <div class="how-to-play-section">
+        <div class="how-to-play-content">
+            <h2 class="how-to-title">Cómo se juega</h2>
+            <div class="how-to-text">
+                <p>
+                    Para jugar, los usuarios deben seleccionar delitos de las categorías de arriba hasta alcanzar un multiplicador x5. Esto puede lograrse con una combinada de tan solo 4 delitos o de hasta 11, según lo que se elija.
+                </p>
+                <p>
+                    Una vez hecha tu selección, debes introducir una cantidad a apostar. El mínimo actual es de 25 DOSCoin y el máximo actual de <a class = "CFTAG">400</a> DOSCoin. Si quieres ver aumentar ese máximo, sigue haciendo apuestas.
+                </p>
+                <p>
+                    El botón de enviar apuesta estará disponible en cuanto comiencen a retransmitirse las transmisiones. Este botón permanecerá activo durante 1 hora; después, las puertas de apuestas se cerrarán por el resto de la noche. El mismo horario se aplica a cada noche del fin de semana (viernes, sábado y domingo).
+                </p>
+            </div>
+        </div>
+        <img src="img/radioBulletPoint.png" alt="Icono" class="how-to-icon">
+    </div>
+    <br><br>
+    <div class="how-to-play-section">
+        <div class="how-to-play-content">
+            <h2 class="how-to-title"><a class="CPTAG">Preguntas frecuentes</a></h2>
+            <div class="how-to-text">
+                <p>- Para validar una apuesta puede decirse por radio el código diez, el lenguaje llano o la abreviatura (p. ej. 10-16, disputa doméstica, ADW (agresión con arma mortal)). <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Esta regla se aplica con discrecionalidad. Si no te gusta nuestro sistema, vete a un casino regulado.</p>
+
+                <p>- Todo delito radiado debe ser confirmado, es decir, quienes respondan a la llamada deben confirmarlo y proceder según el protocolo de dicho delito para validar una selección de apuesta.</p>
+
+                <p>- La señal está supervisada por varias personas y tres programas de subtitulado automático por IA que registran todas las transmisiones.</p>
+
+                <p>- Los pagos se distribuyen <em class="PTAG text-dark" style="color: lightblue;"></em> a la dirección del monedero de apuestas utilizada 72 horas después del cierre de las apuestas.</p>
+
+                <p>- Si una frecuencia se ve comprometida por transmisiones de una persona no autorizada, estas NO contarán para las apuestas realizadas.</p>
+
+                <p>- Somos conscientes de que la ubicación acabará descubriéndose tras emitirse varias transmisiones. Por eso cada ubicación visitada se elige al azar y solo está disponible durante un tiempo limitado.</p>
+
+                <p>- Si a tu combinada se añade un delito aleatorio que ya habías seleccionado, ese delito deberá ocurrir DOS VECES.</p>
+            </div>
+        </div>
+        <img src="img/radioBulletPoint.png" alt="Icono" class="how-to-icon">
+    </div>
+
+    <div class="background-wrapper">
+        <div class="background-image-wrapper" id="bg-1">
+            <img src="img/cherryNberry2.gif" class="background-image" />
+        </div>
+        <div class="background-image-wrapper" id="bg-2">
+            <img src="img/textBackground.png" class="background-image" />
+        </div>
+        <div class="background-image-wrapper" id="bg-line">
+            <img src="img/lineBreak.png" class="background-image" />
+        </div>
+    </div>
+    <script type="text/javascript" src="goBet.js">
+    </script>
+</body>
+</html>

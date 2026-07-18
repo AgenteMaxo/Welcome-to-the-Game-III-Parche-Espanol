@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphoros Chosen</title>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <script type="text/javascript" src="live.js"></script>
+    <link rel="stylesheet" href="../Global/reset.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex-row align-items-center w-100 Syncopate-Regular">
+        <div onClick="LinkClick('index.html')" id="logo" class="flex-col me-auto w-fit self-start Charm-Bold cursor-pointer">
+            <p class="mt-0 mb-0 text-size-32">Symphoro's Chosen</p>
+            <p class="mt-0 mb-0 text-center">Red Room Hub</p>
+        </div>
+        <em id="HEADER-TAG" class="PTAG"></em>
+    </header>
+
+    <div id="live-payment" class="MPLUS-Regular mt-5 text-size-24 mx-auto">
+        <p class="text-center">Se <a class="CFTAG">requiere</a> un pequeño cargo antes de poder conceder la entrada al espectáculo</p>
+
+        <div class="flex-row mt-3">
+            <figure id="qr-block">
+                <img id="qr-code" src="img/easyQRconnect.png">
+                    <div id="qr-link"></div>
+                <em id="QR-TAG" class="PTAG"></em>
+            </figure>
+
+            <form class="flex-col">
+                <label class="MPLUS-SemiBold mb-1" for="amount"><a class="CPTAG">Cantidad</a> a transferir</label>
+                <input type="text" id="amount" class="text-size-18 MPLUS-Medium" name="amount" value="19.8 DOSCoin" disabled>
+
+                <label class="MPLUS-SemiBold mt-3 mb-1" for="wallet">Enviando a este monedero</label>
+                <input type="text" id="wallet" class="text-size-18 MPLUS-Medium" name="wallet" value="3yW5Acq0GFz7Y2t0EwL67nGisiWgN" disabled>
+
+                <p class="text-size-14 mt-1">Envía la cantidad exacta en una sola transacción a la dirección del <a class="CFTAG">monedero</a> indicada arriba.</p>
+            </form>
+        </div>
+
+        <p class="text-size-14 mt-2 w-75 mx-auto">
+            Una vez confirmado el pago, esta página te redirigirá automáticamente a una página de autorización donde <a class="CPTAG">deberás</a> introducir la dirección de tu monedero.
+            La autorización solo <em class="PTAG"></em> está activa durante un tiempo limitado; ten tus datos listos antes de enviar el pago.</p>
+        <figure class="mt-3 w-fit mx-auto">
+            <img id="validate-btn" class="cursor-pointer" onclick="ValidatePayment()" src="img/validateButton.png">
+        </figure>
+    </div>
+    <em id="CORNER-TAG" class="PTAG"></em>
+</body>
+</html>

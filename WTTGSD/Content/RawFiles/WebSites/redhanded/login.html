@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHanded - Iniciar sesión</title>
+    <link rel="stylesheet" href="../Global/reset.css">
+    <script src="../Global/Basic.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="logo-title">
+            RED
+           <img class="logo" src="img/KeyHoleLogo.png" alt="KeyHole Logo">
+            HANDED
+        </h1>
+        <small class="motto">
+            El foro original de <a class = "CPTAG">entusiastas</a> del asesinato desde 1993
+        </small>
+    </div>
+    <div id="login-main">
+        <div id="login-container">
+            <div id="login-header">
+                <h1>Acce<a class="CPTAG">d</a>er</h1>
+                <em id="PTAG-login-header" class="PTAG"></em>
+            </div>
+            <p id="invalid-login-err">Datos de acceso no válidos, inténtalo de nuevo</p>
+            <em id="PTAG-login-form" class="PTAG vertical absolute"></em>
+            <form>
+                <label for="username-input">Usu<a class="CFTAG">a</a>rio</label>
+                <input type="text" name="username-input" id="username-input" autocomplete="off">
+                <br>
+                <label for="password-input">Contraseña</label>
+                <input type="password" name="password-input" id="password-input" autocomplete="off">
+                <br>
+                <button type="button" id="login-form-btn" onClick="onLogin()">Acceder</button>
+                <br>
+            </form>
+        </div>
+        <button class="go-back-btn" onClick="LinkClick('index.html')">Volver</button>
+        <em id="PTAG-login-bottom" class="PTAG absolute"></em>
+    </div>
+</body>
+</html>

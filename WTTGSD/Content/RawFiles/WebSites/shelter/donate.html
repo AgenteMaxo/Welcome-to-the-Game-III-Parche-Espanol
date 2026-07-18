@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <link rel="stylesheet" href="../Global/reset.css" />
+        <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="minutesCheck()">
+    <div class="header">
+      <em class="PTAG text2"></em>
+      <div class="logo">
+        <a onClick="LinkClick('index.html')" class="active">shelter</a>
+      </div>
+      <div class="navbar">
+        <a onClick="LinkClick('donate.html')" class="active">donar/suscribirse</a>
+        <a onClick="LinkClick('events.html')" class="active">eventos</a>
+      </div>
+    </div>
+    <div class="bodyText">
+      <span>
+        Se pueden hacer donaciones para reducir/aumentar el <a class = "CFTAG">contador</a> de la familia. Suscríbete
+        para acceder a todo el contenido disponible en la página de eventos Y aumentar
+        el <a class="CPTAG">contador</a> de la familia una pequeña cantidad.
+      </span>
+      <br /><br /><br />
+      <span class="donateTitle">LEE ANTES DE ENVIAR FONDOS</span>
+      <span>
+        <br />- La conversión es de
+        <span style="font-family: 'Goldman'"><a class="CFTAG">6 DOSCoin</a> por minuto.</span>
+        <br /><br />
+        - El contador no puede superar los
+        <span style="font-family: 'Goldman'">9999 minutos. </span
+        ><em class="PTAG"></em><br />
+        &nbsp;&nbsp;&nbsp;- El tiempo restante actual es:
+        <span id="minutesLeft">?</span> (actualizado hace unos momentos) <br /><br />
+        - El tiempo mostrado a la familia se actualiza al día siguiente a los
+        <span style="font-family: 'Goldman'">
+          180 minutos, 360 minutos y 540 minutos
+        </span>
+        de grabación. <em class="PTAG"></em> <br /><br />
+        - El código de acceso de suscriptor solo es válido hasta la actualización. La próxima actualización
+        ocurrirá:
+        <span style="font-family: 'Goldman'">mañana a las 0600 ZULU</span>.
+      </span>
+
+      <div class="donation">
+        <span class="donationTitle">Modifica el tiempo restante de la familia</span>
+        <br /><br />
+
+        <div class="segmented-container">
+          <div class="segmented-button" onclick="handleClick(1)">Reducir</div>
+          <div
+            class="segmented-button active"
+            style="border-right: 1px solid black"
+            onclick="handleClick(2)"
+          >
+            Aumentar
+          </div>
+        </div>
+        <br />
+        <span>Cantidad a donar:</span>
+        <br />
+        <div class="donateOpt">
+          <form name="donateSelect">
+          <label><input class="option" type="radio" id="60" value="0"/>60 </label>
+          <label><input class="option" type="radio" id="80" value="1"/>80</label>
+          <label><input class="option" type="radio" id="100" value="2"/>100</label>
+          <label><input class="option" type="radio" id="120" value="3"/>120</label>
+          <label><input class="option" type="radio" id="140" value="4"/>140</label>
+          <label><input class="option" type="radio" id="Other" value="5"/>Otra</label>
+          <input disabled id="other" class="other" type="text" autocomplete="off"/> DOSCoin<em class="PTAG"></em>
+        </form>
+        </div>
+        <br />
+        <button class="btnDonate" onclick="location.href = 'donate.html'">DONAR</button>
+      </div>
+
+      <div class="subscribe">
+        <span class="subsTitle"><a class="CPTAG">Suscríbete</a></span>
+        <br /><br />
+        <span class="subsDesc">
+          Los suscriptores obtienen acceso <em class="PTAG text-blend"></em> a los vídeos de la página de
+          eventos hasta que se produzca una actualización. Todos los fondos recaudados de los suscriptores se destinan
+          a AUMENTAR el contador en 5 minutos. <br /><br />
+          <form name="subscribeSelect">
+          DIRECCIÓN DEL MONEDERO: <input type="text" name="wallet" autocomplete="off" /> <br />
+          CORREO ELECTRÓNICO: &nbsp;<input type="text" name="wallet" autocomplete="off" /> <br /><br />
+          </form>
+          <a class="CFTAG">Coste:</a> <a class = "CPTAG">28</a> DOSCoin
+        </span>
+        <br /><br />
+        <button class="btnDonate" onclick="location.href = 'donate.html'">
+          SUSCRIBIRSE
+        </button>
+      </div>
+      <br /><br />
+      <span class="footer">
+        Elige con cuidado, ya que no hay reembolsos ni puedes cambiar cómo
+        afecta la donación al contador una vez completada la transacción.
+      </span>
+      <br /><br />
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

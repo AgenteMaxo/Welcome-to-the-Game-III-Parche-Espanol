@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <link rel="stylesheet" href="../Global/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="minutesRemain()">
+    <script type="text/javascript" src="script.js"></script>
+    <div class="header">
+      <div class="logo">
+        <a onClick="LinkClick('index.html')" class="active">shelter</a>
+      </div>
+      <div class="navbar">
+        <a onClick="LinkClick('donate.html')" class="active">donar/suscribirse</a>
+        <a onClick="LinkClick('events.html')" class="active">eventos</a>
+      </div>
+    </div>
+    <div class="bodyText">
+      <span>
+        Presentamos la tercera entrega de <a class = "CFTAG">Shelter</a>. Donde puedes ayudar a decidir
+        el destino de la familia Johnson.
+
+        <br /><br />Las suscripciones adquiridas suman tiempo a lo que les queda de estancia
+        dentro de Shelter. Los suministros son limitados y, cuando se agoten, habrá que tomar
+        decisiones difíciles. Se pueden enviar donaciones para aumentar
+        o reducir su tiempo restante. <em class="PTAG"></em> Una vez que el
+        contador llegue a 0, la familia queda liberada, sin condiciones.
+      </span>
+      <div class="imgContent">
+        <span class="imgSubtitle">
+          <a class="CPTAG">&lt;--</a> imagen del contador que se muestra<br />a la familia.
+        </span>
+        <span class="timer">
+          Tiempo actual antes de que<br />la familia Johnson sea<br />liberada:
+        </span>
+        <div class="minutes">
+          <span id="minutes"> </span>
+          <span>
+            <br />minutos <a class="CFTAG">restantes</a>
+
+            <br /><br />
+            tiempo total dentro de Shelter<br />46.863 minutos
+          </span>
+        </div>
+      </div>
+      <span>
+        La familia Johnson está encerrada en un lugar remoto y filmada con
+        una única cámara de gran angular. El metraje del día anterior se comparte al día siguiente.
+        Nunca habrá una emisión en directo.
+        <br /><br />
+        La familia es consciente de su situación <em class="PTAG"></em> y puede ver un contador que se actualiza
+        tres veces al día con los minutos que les quedan en Shelter. El
+        contador nunca puede superar los
+        <span style="font-family: 'Goldman'">9999 minutos</span>.
+        <em class="PTAG"></em> <br /><br />
+        Periódicamente, la familia recibirá un reto que, de completarse,
+        reduce su tiempo restante en Shelter. Los espectadores que <a class="CPTAG">aumentan</a> el tiempo
+        restante animan a los miembros de la familia a aceptar las condiciones del reto. Plantéate
+        suscribirte o donar para conseguir contenido más emocionante.
+      </span>
+      <div class="finalText">
+        <br />
+        ¿Por qué estás apostando, por su supervivencia o por algo terrible?
+        <br /><br />
+        ¿Dónde estarás cuando se decida su destino?
+      </div>
+      <br /><br />
+      <div class="video">
+        <span>MIRA A LA FAMILIA <a class="CFTAG">JOHNSON</a></span><br />
+        <button onclick="watchRecent()" class="btnPlay">
+          <img src="img/playButton.png" id="play" style="height: 60px" />
+        </button>
+        <em class="PTAG text-dark"></em>
+      </div>
+      <br /><br />
+      <div class="bottomText">
+        <span class="wantMore">¿QUIERES MÁS?</span>
+        <br />
+        <span>
+          Los suscriptores obtienen acceso completo a la página de eventos, que muestra cada
+          momento memorable filmado en los últimos <a class = "CPTAG">14</a> días.
+        </span>
+        <br /><br />
+        <a onClick="LinkClick('donate.html')" class="active">Suscríbete aquí</a>
+      </div>
+    </div>
+  </body>
+</html>

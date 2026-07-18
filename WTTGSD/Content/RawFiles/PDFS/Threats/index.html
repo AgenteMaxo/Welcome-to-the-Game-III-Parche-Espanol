@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Threats</title>
+    <link rel="stylesheet" href="../Global/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+
+    Threats = ["NoirData",
+                "TannerData",
+                "TuckerData",
+                "CletusData",
+                "LucasData",
+                "TheKidnapperData",
+                "TheBreatherData"
+            ];
+
+    function showData(clicked) {
+    document.getElementById(Threats[0]).style.visibility = "hidden";
+    document.getElementById(Threats[0]).style.position = "fixed";
+
+    document.getElementById(Threats[1]).style.visibility = "hidden";
+    document.getElementById(Threats[1]).style.position = "fixed";
+
+    document.getElementById(Threats[2]).style.visibility = "hidden";
+    document.getElementById(Threats[2]).style.position = "fixed";
+
+    document.getElementById(Threats[3]).style.visibility = "hidden";
+    document.getElementById(Threats[3]).style.position = "fixed";
+
+    document.getElementById(Threats[4]).style.visibility = "hidden";
+    document.getElementById(Threats[4]).style.position = "fixed";
+
+    document.getElementById(Threats[5]).style.visibility = "hidden";
+    document.getElementById(Threats[5]).style.position = "fixed";
+
+    document.getElementById(Threats[6]).style.visibility = "hidden";
+    document.getElementById(Threats[6]).style.position = "fixed";
+
+    let activeSelect = (clicked + "Data");
+    var x = document.getElementById(activeSelect)
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.position = "";
+        }
+    }       
+    </script>
+</head>
+<body>
+    <div class="content">
+    <div class="nav">
+        <div class="navbar">
+            <ul>
+                <li style="padding: 8px; background-color: #111111;"><strong>Enlaces rápidos:</strong></li>
+                <li><a href="#Noir" id="Noir" onclick="showData(this.id)">Noir</a></li>
+                <li><a href="#Tanner" id="Tanner" onclick="showData(this.id)">Tanner</a></li>
+                <li><a href="#Tucker" id="Tucker" onclick="showData(this.id)">Tucker</a></li>
+                <li><a href="#Cletus" id="Cletus" onclick="showData(this.id)">Cletus</a></li>
+                <li><a href="#Lucas" id="Lucas" onclick="showData(this.id)">Lucas</a></li>
+                <li><a href="#The Kidnapper" id="TheKidnapper" onclick="showData(this.id)">El Secuestrador</a></li>
+                <li><a href="#The Breather" id="TheBreather" onclick="showData(this.id)">El Jadeante</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="threat-info">
+
+    <div class="container" id="NoirData" style="visibility: visible; position: "";">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>Noir</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Esta pareja aparece aparentemente de la nada. Prefieren la oscuridad, suelen ir juntos y exigen que sigas sus reglas.</span>
+
+        <span>Su postura decidirá tu siguiente movimiento. Si ves, de izquierda a derecha, primero a la mujer más baja y luego al hombre más alto, alúmbralos con una linterna un momento y date la vuelta por completo, <strong>cuenta exactamente hasta 10</strong> y luego vuélvete de inmediato hacia donde estaban antes.</span>
+
+        <span>Si ves, de izquierda a derecha, primero al hombre más alto y luego a la mujer más baja, haz casi lo mismo que arriba, pero <strong>cuenta exactamente hasta 5</strong>.</span>
+
+        <span>Observar a sus presas es algo que ambos disfrutan por separado. Si te quedas a solas con cualquiera de los dos, debes seguir reglas parecidas, pero ya no necesitas contar exacto.<strong> Cuando lo tengas cerca, límitate a apartar la mirada.</strong> Tras esperar un momento, desaparecerá.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>
+    </div>
+
+
+    <div class="container" id="TannerData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>Tanner</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Estás destinado a ser su próxima víctima, pero agradece que le guste jugar.</span>
+
+        <span>Asegura siempre la zona en la que estés, porque si hay un camino fácil hasta ti, lo aprovechará.</span>
+
+        <span>A veces basta con reconocer su presencia para arruinarle la diversión. Usa lo que tengas a mano para mirarlo a los ojos y disipar cualquier sueño de emboscada que pudiera tener.</span>
+
+        <span>En tu escritorio tienes un botón de pánico. Al pulsarlo se cerrarán con llave las puertas correderas de la entrada, impidiendo que entre nadie... eso si pulsas el botón a tiempo.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>            
+    </div>
+
+
+    <div class="container" id="TuckerData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>Tucker</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Uno de los chicos de Wade al que han encargado que te ataque. La emoción de la caza es lo que lo motiva, ya sea atrayendo a su presa a una trampa o alborotando el lugar para ver la desbandada en busca de refugio.</span>
+
+        <span>Escucha con atención cuando salgas a hacer reparaciones; con la espalda vuelta, podría haber alguien tras de ti. ¿Oyes un ruido extraño? Es mejor quedarse quieto un momento antes de continuar.</span>
+
+        <span>Aun así, este chico no siempre es silencioso; de vez en cuando puede que oigas una vieja melodía. Cuando la oigas, se acabó la cautela y el tiempo corre. Registra el aparcamiento del motel para encontrar una puerta con la carta del As de Picas y entra.</span>
+
+        <span>Consigue meterte dentro antes de que la noche vuelva a quedar en silencio y sobrevivirás.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>            
+    </div>
+
+
+    <div class="container" id="CletusData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>Cletus</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Otro de los chicos de Wade con el mono de un chute.</span>
+
+        <span>Solo hay una forma de caerle bien a este drogata y es darle lo que más ansía: metanfetamina.</span>
+
+        <span>Una vez que la consigas, no te preocupes por encontrarlo; te olfateará cuando esté hambriento de otra dosis, solo tienes que llevarla encima.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>            
+    </div>
+
+
+    <div class="container" id="LucasData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>Lucas</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Todos los jugadores de El Juego tienen un sicario asignado a la espera de la llamada para matarlos. Este es el tuyo.</span>
+
+        <span>No sabrás cuándo se le convoca, así que ponte a salvo antes de que llegue ese momento. Un asesino entrenado es sigiloso, se pega a las sombras y guarda silencio la mayoría de las veces; poco te avisará de que se acerca a menos que te prepares.</span>
+
+        <span>Si lo has detectado, disimula el lugar desde el que juegas. Apaga las luces, mantén las puertas cerradas con llave y localiza un sitio donde puedas esconderte.</span>
+
+        <span>Esa condición de ansiedad que tienes hará que guardar silencio sea todo un reto.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>
+    </div>
+
+
+    <div class="container" id="TheKidnapperData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>El Secuestrador</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Este traficante entrenado conoce tu ubicación y tiene instrucciones de capturarte si surge la oportunidad mientras está aparcado cerca.</span>
+
+        <span>El sigilo es una prioridad para él, así que mantén cerradas con llave tus puertas traseras. Si vas a salir, echa un buen vistazo a la zona de la calle en busca de su furgoneta blanca. Si la ves, tendrás que esperar a que se marche.</span>
+
+        <span>Solo con la vista a menudo no bastará para localizar la posición de su vehículo. Ponte a salvo con antelación, o desconfía cada vez que salgas a la calle.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>
+    </div>
+
+
+    <div class="container" id="TheBreatherData" style="visibility: hidden; position: fixed;">
+        <div id="info">
+            <p class="highlight"><strong>SUJETO: </strong>El Jadeante</p>
+        </div>
+
+        <div id="instructions">
+            <h3><strong>Análisis</strong></h3>
+        </div>
+        
+        <span>Un hombre perturbado y maníaco puede merodear cerca del punto de entrega de tu paquete.</span>
+
+        <span>Si aparece, huye de vuelta hacia una zona con más gente. Su presencia, aunque solo la supongas, bastará para que abandone la persecución.</span>
+
+        <div id="sign-off">
+            <span>Datos facilitados conforme al estándar de juego limpio</span>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

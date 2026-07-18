@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <title>Worldwide Workers</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../Global/reset.css"/>
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="content">
+        <header>
+            <img id="logo" src="img/logo.png" alt="logo">
+        </header>
+    
+        <main>
+            <nav>
+                <a onClick="LinkClick('index.html')" class="active" id="home"></a>
+                <a onClick="LinkClick('submit.html')" class="active" id="submit"></a>
+                <a onClick="LinkClick('about.html')" class="active" id="about"></a>
+            </nav>
+
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                Todos los campos deberían alcanzar el número mínimo recomendado de caracteres antes de enviar una solicitud. Esto ayuda a garantizar que se ha aportado suficiente detalle, lo que acelera el procesamiento por nuestra parte y te evita tener que pagar tarifas adicionales.
+            </p>
+            <br>
+            <p style="font-size: 0.9em;">
+                Abstente de <a class="CPTAG">mencionar</a> cualquier dato personal al responder a estas indicaciones. Solo se piden los detalles clave para validar que WorldWide Workers puede ofrecer correctamente una evaluación precisa de tu propuesta.
+            </p>
+            <br><br>
+            <div id="submitForm">
+                <div id="locationInfo">
+                    <textarea type="text" id="locationInput" placeholder="Localización/es (Dirección, describe el entorno, nivel de seguridad, otros detalles pertinentes)" maxlength="800"></textarea>
+                    <p class="bolditalic" style="font-size: 0.7em;"><span id="charlocationInput">0</span>/800 número mínimo recomendado de caracteres.</p>
+                </div>
+                <br>
+                <div id="targetInfo">
+                    <textarea type="text" id="tagetInput" placeholder="Objetivo/s (Persona, objeto de interés, objetivo/meta)" maxlength="800"></textarea>
+                    <p class="bolditalic" style="font-size: 0.7em;"><span id="chartagetInput">0</span>/800 <em class="PTAG text-dark"></em> número mínimo recomendado de caracteres.</p>
+                </div>
+                <br>
+                <div id="crewInfo">
+                    <textarea type="text" id="crewInput" placeholder="Equipo (Personal disponible, especialidades o habilidades)" maxlength="800"></textarea>
+                    <p class="bolditalic" style="font-size: 0.7em;"><span id="charcrewInput">0</span>/800 número mínimo recomendado de caracteres.</p>
+                </div>
+                <br>
+                <div id="eqInfo">
+                    <textarea type="text" id="eqInput" placeholder="Equipamiento que piensas usar (armas de fuego, vehículos, capital disponible)" maxlength="800"></textarea>
+                    <p class="bolditalic" style="font-size: 0.7em;"><span id="chareqInput">0</span>/800 número mínimo recomendado de caracteres.</p>
+                </div>
+            </div>
+
+            <div id="disclosure">
+                <p>
+                    Se te cobrará una tarifa de procesamiento adicional <span class="bold">(200 DOSCoin)</span> si algún campo no incluye suficiente información para cumplir adecuadamente nuestros requisitos.
+                </p>
+                <br>
+                <p>
+                    Si una solicitud requiere más de los <span class="bolditalic">tres días laborables máximos</span> para procesarse, se exigirá un <span class="bolditalic">pago adicional de 200 DOSCoin</span> para continuar. Esa tarifa cubrirá los siguientes 2 días laborables. Las propuestas que exijan más tiempo adicional <em class="PTAG text-dark"></em> conllevarán un cargo de <span class="bolditalic">125 DOSCoin por cada día laborable extra</span> tras la primera prórroga de 200 DOSCoin.
+                </p>
+                <br>
+                <p>
+                    No hay <a class="CFTAG">reembolsos</a> para las propuestas una vez enviadas.
+                </p>
+                <br>
+                <p>
+                    Pueden hacerse modificaciones en una propuesta hasta un máximo de 24 horas tras el envío. Dentro de este periodo de 24 horas <em class="PTAG text-dark"></em> las modificaciones deben enviarse al correo de contacto facilitado en tu confirmación de transacción. Si el periodo de 24 horas ha vencido, se te cobrará la tarifa de procesamiento adicional <span class="bold">(200 DOSCoin)</span>.
+                </p>
+                <br>
+                <p>
+                    No pagar cualquier tarifa adicional en la que incurras hará que nuestro equipo descarte tu propuesta. Los clientes descartados no recibirán de nosotros ninguna información sobre el trabajo que hubiéramos hecho hasta ese momento y quedarás vetado del uso de nuestros servicios en el futuro.
+                </p>
+            </div>
+            
+            <div id="infoForm">
+                <input type="text" placeholder="Introduce tu correo de contacto preferido">
+                <em class="PTAG text-dark" style="font-size: 0.7em; position: absolute; left: 230px; margin-top: 55px; font-family: NotoSans-Light;"></em>
+                <br>
+                <input type="text" placeholder="Introduce la dirección del monedero vinculado">
+            </div>
+
+            <div id="conditions" class="bold">
+                <p>
+                    Acepto el cargo de 550 DOSCoin para procesar esta propuesta. La he revisado lo mejor que he podido y creo que cumple el nivel de detalle esperado que solicita WorldWide Workers.
+                </p>
+                <br>
+                <p>
+                    Se me ha informado de todas las tarifas adicionales en las que podría incurrir y de la <a class="CPTAG">política</a> de reembolsos.
+                </p>
+                <br>
+                <p>
+                    Al hacer clic en el botón de <a class = "CFTAG">enviar</a> de abajo, doy mi consentimiento a todas las declaraciones anteriores y a cualquier condición aplicable disponible en este sitio.
+                </p>
+            </div>
+            <br>
+            <span id="paymentFailedText" class="bold" style="color:#861313; display: block; text-align: center; font-size: 1.2em;">PAGO FALLIDO</span>
+            <a onClick="submitPayment()" id="submitFormBtn"></a>
+            <br><br>
+            <em class="PTAG text-dark" style="position: absolute; top: 5px; left: 5px; color: #0c400c; font-size: 0.6em;"></em>
+        </main>
+    </div>
+    <script>
+        document.getElementById("submitForm").addEventListener("input", characterCounter)
+
+        function characterCounter() {
+            let text = document.getElementById(event.target.id).value;
+            let counter = "char" + event.target.id;
+            console.log(counter)
+            document.getElementById(counter).innerHTML = text.length;
+        }
+    </script>
+</body>
+</html>

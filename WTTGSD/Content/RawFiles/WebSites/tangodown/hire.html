@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <title>Tango Down</title>
+    <link rel="stylesheet" href="../Global/reset.css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="../Global/Basic.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body id="page">
+    <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <a class="CFTAG"><img src="images/logo.png" width="200"></a>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a onClick="LinkClick('index.html')">El trabajo</a>
+                </li>
+                <li>
+                    <a onClick="LinkClick('payment.html')">El pago</a>
+                </li>
+                <li>
+                    <a onClick="LinkClick('results.html')">Los resultados</a>
+                </li>
+                <li>
+                    <a onClick="LinkClick('hire.html')" class="bold">Contrátanos</a>
+                </li>
+            </ul>
+            <div class="notice">
+                <div id="notice-img">
+                    <img src="images/ACRS_icon_4_64x64.png">
+                </div>
+                <div> 
+                    <p id="notice-text">Disponible en #VelvetRoad</p>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="column">
+                <h1 class="center">Contrátanos</h1>
+            </div>
+            <div id="column" class="flexbox">
+                <div id="profile-image"><img src="images/hire.png" width="475"><a class="CPTAG INPROF"></a></div>
+                <div> <em class="PTAG"></em>
+                    <div id="box">
+                        <p>Has tomado la decisión correcta viniendo aquí, no pierdas el tiempo con los demás.
+                            Somos los mejores. ¿Estás listo para encargarte del problema? Facilítanos los siguientes
+                            datos del objetivo:</p>
+                        <ul id="column-list" class="list-numbers">
+                            <li>Nombre completo</li>
+                            <li>Edad</li> <em class="PTAG"></em>
+                            <li>Dirección (Ciudad/Estado/País)</li>
+                            <li>Trabajo</li>
+                            <li>Aficiones</li>
+                            <li>Cónyuge</li>
+                            <li><a class = "CPTAG">Foto</a> del objetivo</li>
+                            <li>Muerte "Accidental" / "Suicidio"</li>
+                        </ul>
+
+                        <textarea name="target-info" id="target-info-textarea"
+                            placeholder="Introduce todos los datos de la persona que quieres eliminar o nos quedaremos con tu dinero y borraremos la solicitud."></textarea>
+
+                        <button id="deposit-btn" onClick="validateDeposit()">Depositar 2000 $</button>
+                        <em id="error-msg">No hay monedero vinculado</em>
+                        <br>
+                        <p class="center">Una vez encargado no hay vuelta atrás, el objetivo se considera muerto.</p>
+                        <p class="center">Todas las ventas son <b>DEFINITIVAS</b>. <b>NO</b> puedes deshacer un encargo.</p>
+                        <em class="PTAG"></em>
+                        <br><br>
+                        <p class="center">
+                            Nos pondremos en contacto con los siguientes pasos. Si no sabes de nosotros en una semana, envía un mensaje
+                            al correo de <a class = "CFTAG">abajo</a> con tu n.º de pedido en el asunto.
+                        </p>
+                        <p class="center"><b>down@1A4DwzLhDFz6e6WtzGTRCkYxtyUXNE2nMhLSw.ann</b></p>
+                    </div>
+                </div> <em class="PTAG"></em>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
